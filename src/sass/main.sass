@@ -4,9 +4,26 @@
   font-family: "SF Pro Text", "Helvetica Neue", "Helvetica", "Arial", sans-serif
   line-height: 1.5
 
+@mixin title-text
+  font-family: "SF Pro Text", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+  line-height: 1.0
+
 body
   padding: 48px
   box-sizing: border-box
+
+sup
+  vertical-align: super
+  font-size: 14px
+
+h1
+  @include title-text
+  font-size: 140px
+  font-weight: bold
+
+h2
+  @include title-text
+  font-size: 70px
 
 .block
   margin-top: 48px
@@ -35,6 +52,6 @@ body
   padding-bottom: 1px
   margin-top: -1px
   margin-bottom: -1px
-  margin-right: 2px
+  margin-right: 4px
 
   font-weight: 900
