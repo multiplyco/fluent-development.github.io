@@ -8,10 +8,12 @@
   "scripts": {
     "install-deps": "brew install clojure/tools/clojure && curl -LO https://github.com/retrogradeorbit/bootleg/releases/download/v0.1.7/bootleg-0.1.7-macos-amd64.zip && unzip bootleg-0.1.7-macos-amd64.zip && mv bootleg /usr/local/bin",
     "build:index": "bootleg src/index.clj > index.html",
+    "build:html": "yarn build:index",
     "sass:release": "./node_modules/.bin/node-sass src/sass/main.sass --output-style compressed --output .",
     "sass:compile": "./node_modules/.bin/node-sass src/sass/main.sass --output .",
     "sass:dev": "./node_modules/nodemon/bin/nodemon.js -e sass -x \"yarn sass:compile\"",
-    "build": "yarn build:index && yarn sass:compile"
+    "build": "yarn build:index && yarn sass:compile",
+    "build:dev": "./node_modules/nodemon/bin/nodemon.js -e clj -x \"yarn build:html\""
   },
   "dependencies": {
     "node-sass": "^4.13.1",
