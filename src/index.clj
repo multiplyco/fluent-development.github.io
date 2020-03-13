@@ -80,7 +80,8 @@
 ;; Site structure
 ;; ##################################
 [:html
- [:head]
+ [:head
+  [:link {:rel "main.css" :type "text/css"}]]
  [:body
   [:h1 "Fluent."]
   [:h2 "Welcome to purpose."]
