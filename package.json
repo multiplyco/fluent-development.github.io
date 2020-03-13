@@ -7,6 +7,14 @@
   "license": "MIT",
   "scripts": {
     "install-deps": "brew install clojure/tools/clojure && curl -LO https://github.com/retrogradeorbit/bootleg/releases/download/v0.1.7/bootleg-0.1.7-macos-amd64.zip && unzip bootleg-0.1.7-macos-amd64.zip && mv bootleg /usr/local/bin",
-    "build:index": "bootleg index.clj > index.html"
+    "build:index": "bootleg src/index.clj > index.html",
+    "sass:release": "./node_modules/.bin/node-sass src/sass/main.sass --output-style compressed --output .",
+    "sass:compile": "./node_modules/.bin/node-sass src/sass/main.sass --output .",
+    "sass:dev": "./node_modules/nodemon/bin/nodemon.js -e sass -x \"yarn sass:compile\"",
+    "build": "yarn build:index && yarn sass:compile"
+  },
+  "dependencies": {
+    "node-sass": "^4.13.1",
+    "nodemon": "^2.0.2"
   }
 }
