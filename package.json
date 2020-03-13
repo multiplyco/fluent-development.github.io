@@ -13,7 +13,7 @@
     "sass:compile": "./node_modules/.bin/node-sass src/sass/main.sass --output .",
     "sass:dev": "./node_modules/nodemon/bin/nodemon.js -e sass -x \"yarn sass:compile\"",
     "build": "yarn build:index && yarn sass:compile",
-    "build:dev": "./node_modules/nodemon/bin/nodemon.js -e clj -x \"yarn build:html\""
+    "build:dev": "./node_modules/nodemon/bin/nodemon.js -e clj -x \"yarn build:html || exit 1\""
   },
   "dependencies": {
     "node-sass": "^4.13.1",
