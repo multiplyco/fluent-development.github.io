@@ -12,7 +12,7 @@
     "sass:release": "./node_modules/.bin/node-sass src/sass/main.sass --output-style compressed --output .",
     "sass:compile": "./node_modules/.bin/node-sass src/sass/main.sass --output .",
     "sass:dev": "./node_modules/nodemon/bin/nodemon.js -e sass -x \"yarn sass:compile\"",
-    "build": "yarn build:index && yarn sass:compile",
+    "build": "yarn build:index && yarn sass:release",
     "build:dev": "./node_modules/nodemon/bin/nodemon.js -e clj -x \"yarn build:html || exit 1\"",
     "serve": "./node_modules/http-server/bin/http-server"
   },
