@@ -4,7 +4,7 @@
 (def manifesto
   [:div.block.columns-2
    [:div.paragraph
-    [:span.block-title "Manifesto."]
+    [:span.title "Manifesto."]
     "We believe that work is part of life — life should not be lived in breaks between work."]
 
    [:div.paragraph
@@ -29,7 +29,7 @@
 (def vision-process
   [:div.block.columns-2
    [:div.paragraph
-    [:span.block-title "Vision & Process."]
+    [:span.title "Vision & Process."]
     "These are a few key parts of the Fluent Process and the Fluent vision."
     [:ul
      [:li "Autonomy, Mastery, and Purpose (AMP3) over hierarchies, forced promotions, and working without caring."]
@@ -43,7 +43,7 @@
 (def inspiration
   [:div.block.columns-2
    [:div.paragraph
-    [:span.block-title "Inspiration. "]
+    [:span.title "Inspiration. "]
     "Here are some things that inspire us:"
     [:ul
      [:li "The Long Now Foundation & the Norrsken Foundation."]
@@ -85,7 +85,7 @@
   [:meta {:charset "utf-8"}]
   [:meta {:name    "viewport"
           :content "width=device-width, initial-scale=1.0"}]
-  [:link {:rel "main.css" :type "text/css"}]]
+  [:link {:rel "stylesheet" :type "text/css" :href "main.css"}]]
  [:body
   [:h1 "Fluent."]
   [:h2 "Welcome to purpose."]
