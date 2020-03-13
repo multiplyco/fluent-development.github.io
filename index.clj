@@ -8,7 +8,7 @@
     "We believe that work is part of life — life should not be lived in breaks between work."]
 
    [:div.paragraph
-    "Today’s technology makes it possible to do knowledge work, and soon almost all kinds of work, from most places on earth (and soon beyond). But most companies still think locally and narrowly about their “human resources”1, forcing many to work long hours in environments where focus and flow and unstress is not a priority."]
+    "Today’s technology makes it possible to do knowledge work, and soon almost all kinds of work, from most places on earth (and soon beyond). But most companies still think locally and narrowly about their \"human resources\"" [:sup "1"] ", forcing many to work long hours in environments where focus and flow and unstress is not a priority."]
 
    [:div.footnote
     "[1] We believe that humans are not resources, and that with the aid of great processes and tools a person can do their best work from wherever they feel they can do their best work."]
@@ -20,7 +20,7 @@
     "[2] We believe that humans are not resources, and that with the aid of great processes and tools a person can do their best work from wherever they feel they can do their best work."]
 
    [:div.paragraph
-    "Fluent aims to build the platform to facilitate this future workplace. It is a distributed, flexible, virtual workplace, tailor made for co-creation2, which helps connect the best people with the most meaningful projects irregardless of physical location, and takes care of the incidental complexity and overhead of running great projects with great outcomes."]
+    "Fluent aims to build the platform to facilitate this future workplace. It is a distributed, flexible, virtual workplace, tailor made for co-creation" [:sup "2"] ", which helps connect the best people with the most meaningful projects irregardless of physical location, and takes care of the incidental complexity and overhead of running great projects with great outcomes."]
 
    [:div.footnote
     "[3] We believe that humans are not resources, and that with the aid of great processes and tools a person can do their best work from wherever they feel they can do their best work."]])
