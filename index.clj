@@ -1,9 +1,3 @@
-(defn make-component [{:keys [img-src title description]}]
-  [:div.component
-   [:img {:src img-src}]
-   [:div.title title]
-   [:p description]])
-
 
 ;; Site blocks
 ;; ##################################
@@ -56,6 +50,12 @@
      [:li "Shape Up & It doesn’t have to be crazy at work, by Basecamp."]
      [:li "The Byzantine Empire"]]]])
 
+
+(defn make-component [{:keys [img-src title description]}]
+  [:div.component
+   [:img {:src img-src}]
+   [:div.title title]
+   [:p description]])
 
 (def components
   [:div.block
