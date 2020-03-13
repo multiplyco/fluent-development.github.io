@@ -13,4 +13,5 @@ Run `yarn build`
 ## Dev
 
 Terminal 1: `yarn sass:dev`
+
 Terminal 2: `yarn build:dev`
