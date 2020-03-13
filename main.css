@@ -70,3 +70,6 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .footnote {
   grid-column: 2; }
+
+.block-title {
+  background-color: red; }
