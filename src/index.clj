@@ -43,7 +43,7 @@
 (def inspiration
   [:div.block.columns-2
    [:div.paragraph
-    [:span.title "Inspiration. "]
+    [:span.title "Inspiration."]
     "Here are some things that inspire us:"
     [:ul
      [:li "The Long Now Foundation & the Norrsken Foundation."]
