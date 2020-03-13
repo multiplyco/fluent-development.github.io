@@ -2,4 +2,4 @@
 
 Run `yarn install-deps`
 
-Run `yarn make-index`
+Run `yarn build:index`

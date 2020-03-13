@@ -7,6 +7,6 @@
   "license": "MIT",
   "scripts": {
     "install-deps": "brew install clojure/tools/clojure && curl -LO https://github.com/retrogradeorbit/bootleg/releases/download/v0.1.7/bootleg-0.1.7-macos-amd64.zip && unzip bootleg-0.1.7-macos-amd64.zip && mv bootleg /usr/local/bin",
-    "make-index": "bootleg index.clj > index.html"
+    "build:index": "bootleg index.clj > index.html"
   }
 }
