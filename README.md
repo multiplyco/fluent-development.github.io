@@ -1,3 +1,4 @@
-# Markdown support
+# Build
 
-This is some simple markdown
+Run `yarn install-deps`
+Run `yarn make-index`

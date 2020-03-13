@@ -1,0 +1,41 @@
+Arguments: 
+  /usr/local/Cellar/node/13.10.1/bin/node /usr/local/Cellar/yarn/1.22.0/libexec/bin/yarn.js make-index
+
+PATH: 
+  /Applications/Visual:Studio:Code.app/Contents/Resources/app/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+
+Yarn version: 
+  1.22.0
+
+Node version: 
+  13.10.1
+
+Platform: 
+  darwin x64
+
+Trace: 
+  SyntaxError: /Users/henrik/delat/clojure/fluent-website-v1/package.json: Unexpected token } in JSON at position 292
+      at JSON.parse (<anonymous>)
+      at /usr/local/Cellar/yarn/1.22.0/libexec/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/usr/local/Cellar/yarn/1.22.0/libexec/lib/cli.js:310:30)
+      at /usr/local/Cellar/yarn/1.22.0/libexec/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "fluent-website-v1",
+    "version": "1.0.0",
+    "main": "index.js",
+    "repository": "git@github.com:fluent-development/fluent-website-v1.git",
+    "author": "Henrik Eneroth <henrik@eneroth.com>",
+    "license": "MIT",
+    "scripts": {
+      "make-index": "bootleg index.clj > index.html",
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
