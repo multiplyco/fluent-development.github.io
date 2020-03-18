@@ -71,11 +71,17 @@ h1 {
   line-height: 1.0;
   font-size: 140px;
   font-weight: bold; }
+  @media only screen and (max-width: 600px) {
+    h1 {
+      font-size: 70px; } }
 
 h2 {
   font-family: "SF Pro Text", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   line-height: 1.0;
   font-size: 70px; }
+  @media only screen and (max-width: 600px) {
+    h2 {
+      font-size: 35px; } }
 
 li::before {
   content: "•";
@@ -86,7 +92,7 @@ li::before {
 
 #hero {
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: 2fr 1fr;
   grid-template-rows: auto auto;
   grid-template-areas: "title image" "subtitle image"; }
   #hero h1 {
@@ -98,7 +104,14 @@ li::before {
     background-image: url("f.png");
     background-position: center;
     background-size: contain;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    min-width: 60px;
+    min-height: 60px; }
+  @media only screen and (max-width: 600px) {
+    #hero {
+      grid-template-areas: "title image" "subtitle subtitle"; }
+      #hero .image {
+        align-self: flex-start; } }
 
 .block {
   margin-top: 48px; }
