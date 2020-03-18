@@ -87,8 +87,10 @@
           :content "width=device-width, initial-scale=1.0"}]
   [:link {:rel "stylesheet" :type "text/css" :href "main.css"}]]
  [:body
-  [:h1 "Fluent."]
-  [:h2 "Welcome to purpose."]
+  [:div#hero
+   [:h1 "Fluent."]
+   [:h2 "Welcome to purpose."]
+   [:div.image]]
   manifesto
   vision-process
   inspiration

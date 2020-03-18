@@ -1,5 +1,10 @@
 @import reset
 
+// Colors
+$background-color-light: #fecaf4
+$foreground-color-primary: E200B0
+
+
 @mixin body-text
   font-family: "SF Pro Text", "Helvetica Neue", "Helvetica", "Arial", sans-serif
   line-height: 1.5
@@ -25,8 +30,35 @@ h2
   @include title-text
   font-size: 70px
 
+li
+  &::before
+    content: "•"
+    color: $foreground-color-primary
+    display: inline-block
+    width: 1em
+    margin-left: -1em
+
 $mobile-breakpoint: 600px
 
+
+#hero
+  display: grid
+  grid-template-columns: auto 1fr
+  grid-template-rows: auto auto
+  grid-template-areas: "title image" "subtitle image"
+
+  h1
+    grid-area: title
+
+  h2
+    grid-area: subtitle
+
+  .image
+    grid-area: image
+    background-image: url("f.png")
+    background-position: center
+    background-size: contain
+    background-repeat: no-repeat
 
 .block
   margin-top: 48px
@@ -57,7 +89,7 @@ $mobile-breakpoint: 600px
     grid-column: auto
 
 .block .title
-  background-color: #fecaf4
+  background-color: $background-color-light
   padding-left: 4px
   padding-right: 4px
   padding-top: 1px

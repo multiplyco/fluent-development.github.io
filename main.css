@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Reset
  ************************************************ */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
@@ -75,6 +76,29 @@ h2 {
   font-family: "SF Pro Text", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   line-height: 1.0;
   font-size: 70px; }
+
+li::before {
+  content: "•";
+  color: E200B0;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em; }
+
+#hero {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas: "title image" "subtitle image"; }
+  #hero h1 {
+    grid-area: title; }
+  #hero h2 {
+    grid-area: subtitle; }
+  #hero .image {
+    grid-area: image;
+    background-image: url("f.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat; }
 
 .block {
   margin-top: 48px; }
