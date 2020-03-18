@@ -25,6 +25,8 @@ h2
   @include title-text
   font-size: 70px
 
+$mobile-breakpoint: 600px
+
 
 .block
   margin-top: 48px
@@ -35,15 +37,24 @@ h2
   grid-template-columns: 2fr 1fr
   grid-auto-rows: auto
 
+  @media only screen and (max-width: $mobile-breakpoint)
+    grid-template-columns: 1fr
+
 .paragraph
   @include body-text
   grid-column: 1
   font-size: 18px
 
+  @media only screen and (max-width: $mobile-breakpoint)
+    grid-column: auto
+
 .footnote
   @include body-text
   grid-column: 2
   font-size: 12px
+
+  @media only screen and (max-width: $mobile-breakpoint)
+    grid-column: auto
 
 .block .title
   background-color: #fecaf4
