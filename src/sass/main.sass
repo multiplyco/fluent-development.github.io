@@ -1,13 +1,16 @@
 @import reset
 
 // Colors
+// ################################################
 $background-color-light: #fecaf4
 $foreground-color-primary: E200B0
 
 // Sizes
+// ################################################
 $mobile-breakpoint: 600px
 
-// Rest
+// Fonts
+// ################################################
 @mixin body-text
   font-family: "SF Pro Text", "Helvetica Neue", "Helvetica", "Arial", sans-serif
   line-height: 1.5
@@ -16,6 +19,9 @@ $mobile-breakpoint: 600px
   font-family: "SF Pro Text", "Helvetica Neue", "Helvetica", "Arial", sans-serif
   line-height: 1.0
 
+
+// Defaults
+// ################################################
 body
   padding: 48px
   box-sizing: border-box
@@ -39,6 +45,10 @@ h2
   @media only screen and (max-width: $mobile-breakpoint)
     font-size: 35px
 
+p, li
+  @include body-text
+  font-size: 18px
+
 li
   &::before
     content: "•"
@@ -48,6 +58,8 @@ li
     margin-left: -1em
 
 
+// Hero
+// ################################################
 #hero
   display: grid
   grid-template-columns: 2fr 1fr
@@ -75,6 +87,9 @@ li
     .image
       align-self: flex-start
 
+
+// Blocks
+// ################################################
 .block
   margin-top: 48px
 
@@ -87,21 +102,15 @@ li
   @media only screen and (max-width: $mobile-breakpoint)
     grid-template-columns: 1fr
 
-.paragraph
-  @include body-text
-  grid-column: 1
-  font-size: 18px
+    .paragraph, .footnote
+      grid-column: auto
 
-  @media only screen and (max-width: $mobile-breakpoint)
-    grid-column: auto
+.paragraph
+  grid-column: 1
 
 .footnote
-  @include body-text
   grid-column: 2
   font-size: 12px
-
-  @media only screen and (max-width: $mobile-breakpoint)
-    grid-column: auto
 
 .block .title
   background-color: $background-color-light
@@ -115,6 +124,9 @@ li
 
   font-weight: 900
 
+
+// Components
+// ################################################
 #components
   display: grid
   grid-template-columns: 1fr 1fr 1fr

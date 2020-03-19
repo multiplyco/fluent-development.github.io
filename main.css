@@ -83,6 +83,11 @@ h2 {
     h2 {
       font-size: 35px; } }
 
+p, li {
+  font-family: "SF Pro Text", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  line-height: 1.5;
+  font-size: 18px; }
+
 li::before {
   content: "•";
   color: E200B0;
@@ -123,25 +128,16 @@ li::before {
   grid-auto-rows: auto; }
   @media only screen and (max-width: 600px) {
     .columns-2 {
-      grid-template-columns: 1fr; } }
+      grid-template-columns: 1fr; }
+      .columns-2 .paragraph, .columns-2 .footnote {
+        grid-column: auto; } }
 
 .paragraph {
-  font-family: "SF Pro Text", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-  line-height: 1.5;
-  grid-column: 1;
-  font-size: 18px; }
-  @media only screen and (max-width: 600px) {
-    .paragraph {
-      grid-column: auto; } }
+  grid-column: 1; }
 
 .footnote {
-  font-family: "SF Pro Text", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-  line-height: 1.5;
   grid-column: 2;
   font-size: 12px; }
-  @media only screen and (max-width: 600px) {
-    .footnote {
-      grid-column: auto; } }
 
 .block .title {
   background-color: #fecaf4;

@@ -3,52 +3,52 @@
 ;; ##################################
 (def manifesto
   [:div.block.columns-2
-   [:div.paragraph
+   [:p.paragraph
     [:span.title "Manifesto."]
     "We believe that work is part of life — life should not be lived in breaks between work."]
 
-   [:div.paragraph
+   [:p.paragraph
     "Today’s technology makes it possible to do knowledge work, and soon almost all kinds of work, from most places on earth (and soon beyond). But most companies still think locally and narrowly about their \"human resources\"" [:sup "1"] ", forcing many to work long hours in environments where focus and flow and unstress is not a priority."]
 
-   [:div.footnote
+   [:p.footnote
     "[1] We believe that humans are not resources, and that with the aid of great processes and tools a person can do their best work from wherever they feel they can do their best work."]
 
-   [:div.paragraph
+   [:p.paragraph
     "We believe that humans are not resources, and that with the aid of great processes and tools a person can do their best work from wherever they feel they can do their best work."]
 
-   [:div.footnote
+   [:p.footnote
     "[2] We believe that humans are not resources, and that with the aid of great processes and tools a person can do their best work from wherever they feel they can do their best work."]
 
-   [:div.paragraph
+   [:p.paragraph
     "Fluent aims to build the platform to facilitate this future workplace. It is a distributed, flexible, virtual workplace, tailor made for co-creation" [:sup "2"] ", which helps connect the best people with the most meaningful projects irregardless of physical location, and takes care of the incidental complexity and overhead of running great projects with great outcomes."]
 
-   [:div.footnote
+   [:p.footnote
     "[3] We believe that humans are not resources, and that with the aid of great processes and tools a person can do their best work from wherever they feel they can do their best work."]])
 
 
 (def vision-process
   [:div.block.columns-2
-   [:div.paragraph
+   [:p.paragraph
     [:span.title "Vision & Process."]
-    "These are a few key parts of the Fluent Process and the Fluent vision."
-    [:ul
-     [:li "Autonomy, Mastery, and Purpose (AMP3) over hierarchies, forced promotions, and working without caring."]
-     [:li "Fixed appetite and variable scope over fixed scope and false delivery dates."]
-     [:li "Clear, honest, sustainable commitments over \"move fast and break [both people and] things\"."]
-     [:li "Minimizing and automating away overhead to focus on the essential complexities of a project over multitasking between workstuff and busystuff ad insaneum."]
-     [:li "Meaningful projects over maximizing profits."]
-     [:li "Long term thinking over short term panic."]]]])
+    "These are a few key parts of the Fluent Process and the Fluent vision."]
+   [:ul.paragraph
+    [:li "Autonomy, Mastery, and Purpose (AMP3) over hierarchies, forced promotions, and working without caring."]
+    [:li "Fixed appetite and variable scope over fixed scope and false delivery dates."]
+    [:li "Clear, honest, sustainable commitments over \"move fast and break [both people and] things\"."]
+    [:li "Minimizing and automating away overhead to focus on the essential complexities of a project over multitasking between workstuff and busystuff ad insaneum."]
+    [:li "Meaningful projects over maximizing profits."]
+    [:li "Long term thinking over short term panic."]]])
 
 
 (def inspiration
   [:div.block.columns-2
-   [:div.paragraph
+   [:p.paragraph
     [:span.title "Inspiration."]
-    "Here are some things that inspire us:"
-    [:ul
-     [:li "The Long Now Foundation & the Norrsken Foundation."]
-     [:li "Shape Up & It doesn’t have to be crazy at work, by Basecamp."]
-     [:li "The Byzantine Empire"]]]])
+    "Here are some things that inspire us:"]
+   [:ul.paragraph
+    [:li "The Long Now Foundation & the Norrsken Foundation."]
+    [:li "Shape Up & It doesn’t have to be crazy at work, by Basecamp."]
+    [:li "The Byzantine Empire"]]])
 
 
 (defn make-component [{:keys [id title description]
