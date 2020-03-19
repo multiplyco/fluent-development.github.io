@@ -7,7 +7,7 @@ $foreground-color-primary: E200B0
 
 // Sizes
 // ################################################
-$mobile-breakpoint: 600px
+$mobile-breakpoint: 768px
 
 // Fonts
 // ################################################
@@ -18,6 +18,7 @@ $mobile-breakpoint: 600px
 @mixin title-text
   font-family: "SF Pro Text", "Helvetica Neue", "Helvetica", "Arial", sans-serif
   line-height: 1.0
+  font-weight: 900
 
 
 // Defaults
@@ -32,18 +33,37 @@ sup
 
 h1
   @include title-text
-  font-size: 140px
+  font-size: 144px
   font-weight: bold
 
   @media only screen and (max-width: $mobile-breakpoint)
-    font-size: 70px
+    font-size: 72px
 
 h2
   @include title-text
-  font-size: 70px
+  font-size: 72px
 
   @media only screen and (max-width: $mobile-breakpoint)
-    font-size: 35px
+    font-size: 36px
+
+h3
+  @include title-text
+  font-size: 36px
+
+  @media only screen and (max-width: $mobile-breakpoint)
+    font-size: 24px
+
+.inline-title
+  @include title-text
+  background-color: $background-color-light
+  padding-left: 4px
+  padding-right: 4px
+  padding-top: 1px
+  padding-bottom: 1px
+  margin-top: -1px
+  margin-bottom: -1px
+  margin-right: 4px
+  font-weight: 900
 
 p, li
   @include body-text
@@ -112,17 +132,6 @@ li
   grid-column: 2
   font-size: 12px
 
-.block .title
-  background-color: $background-color-light
-  padding-left: 4px
-  padding-right: 4px
-  padding-top: 1px
-  padding-bottom: 1px
-  margin-top: -1px
-  margin-bottom: -1px
-  margin-right: 4px
-
-  font-weight: 900
 
 
 // Components
@@ -164,7 +173,7 @@ li
     grid-gap: 24px
     align-items: flex-start
 
-    .title
+    h3
       background-color: transparent
       text-align: center
 

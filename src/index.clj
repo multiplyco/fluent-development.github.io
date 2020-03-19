@@ -4,7 +4,7 @@
 (def manifesto
   [:div.block.columns-2
    [:p.paragraph
-    [:span.title "Manifesto."]
+    [:span.inline-title "Manifesto."]
     "We believe that work is part of life — life should not be lived in breaks between work."]
 
    [:p.paragraph
@@ -20,30 +20,28 @@
     "[2] We believe that humans are not resources, and that with the aid of great processes and tools a person can do their best work from wherever they feel they can do their best work."]
 
    [:p.paragraph
-    "Fluent aims to build the platform to facilitate this future workplace. It is a distributed, flexible, virtual workplace, tailor made for co-creation" [:sup "2"] ", which helps connect the best people with the most meaningful projects irregardless of physical location, and takes care of the incidental complexity and overhead of running great projects with great outcomes."]
-
-   [:p.footnote
-    "[3] We believe that humans are not resources, and that with the aid of great processes and tools a person can do their best work from wherever they feel they can do their best work."]])
+    "Fluent aims to build the platform to facilitate this future workplace. It is a distributed, flexible, virtual workplace, tailor made for co-creation" [:sup "2"] ", which helps connect the best people with the most meaningful projects irregardless of physical location, and takes care of the incidental complexity and overhead of running great projects with great outcomes."]])
 
 
 (def vision-process
   [:div.block.columns-2
    [:p.paragraph
-    [:span.title "Vision & Process."]
+    [:span.inline-title "Vision & Process."]
     "These are a few key parts of the Fluent Process and the Fluent vision."]
    [:ul.paragraph
-    [:li "Autonomy, Mastery, and Purpose (AMP3) over hierarchies, forced promotions, and working without caring."]
+    [:li "Autonomy, Mastery, and Purpose (AMP" [:sup 3] ") over hierarchies, forced promotions, and working without caring."]
     [:li "Fixed appetite and variable scope over fixed scope and false delivery dates."]
     [:li "Clear, honest, sustainable commitments over \"move fast and break [both people and] things\"."]
     [:li "Minimizing and automating away overhead to focus on the essential complexities of a project over multitasking between workstuff and busystuff ad insaneum."]
     [:li "Meaningful projects over maximizing profits."]
-    [:li "Long term thinking over short term panic."]]])
-
+    [:li "Long term thinking over short term panic."]]
+   [:p.footnote
+    "[3] We believe that humans are not resources, and that with the aid of great processes and tools a person can do their best work from wherever they feel they can do their best work."]])
 
 (def inspiration
   [:div.block.columns-2
    [:p.paragraph
-    [:span.title "Inspiration."]
+    [:span.inline-title "Inspiration."]
     "Here are some things that inspire us:"]
    [:ul.paragraph
     [:li "The Long Now Foundation & the Norrsken Foundation."]
@@ -55,7 +53,7 @@
                        :img/keys [src]}]
   [:div.component {:id (name id)}
    [:img {:src src}]
-   [:div.title title]
+   [:h3 title]
    (map #(vector :p %) description)])
 
 (def components

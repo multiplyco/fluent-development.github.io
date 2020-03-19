@@ -69,19 +69,44 @@ sup {
 h1 {
   font-family: "SF Pro Text", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   line-height: 1.0;
-  font-size: 140px;
+  font-weight: 900;
+  font-size: 144px;
   font-weight: bold; }
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 768px) {
     h1 {
-      font-size: 70px; } }
+      font-size: 72px; } }
 
 h2 {
   font-family: "SF Pro Text", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   line-height: 1.0;
-  font-size: 70px; }
-  @media only screen and (max-width: 600px) {
+  font-weight: 900;
+  font-size: 72px; }
+  @media only screen and (max-width: 768px) {
     h2 {
-      font-size: 35px; } }
+      font-size: 36px; } }
+
+h3 {
+  font-family: "SF Pro Text", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  line-height: 1.0;
+  font-weight: 900;
+  font-size: 36px; }
+  @media only screen and (max-width: 768px) {
+    h3 {
+      font-size: 24px; } }
+
+.inline-title {
+  font-family: "SF Pro Text", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  line-height: 1.0;
+  font-weight: 900;
+  background-color: #fecaf4;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  margin-top: -1px;
+  margin-bottom: -1px;
+  margin-right: 4px;
+  font-weight: 900; }
 
 p, li {
   font-family: "SF Pro Text", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
@@ -112,7 +137,7 @@ li::before {
     background-repeat: no-repeat;
     min-width: 60px;
     min-height: 60px; }
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 768px) {
     #hero {
       grid-template-areas: "title image" "subtitle subtitle"; }
       #hero .image {
@@ -126,7 +151,7 @@ li::before {
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-auto-rows: auto; }
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 768px) {
     .columns-2 {
       grid-template-columns: 1fr; }
       .columns-2 .paragraph, .columns-2 .footnote {
@@ -138,17 +163,6 @@ li::before {
 .footnote {
   grid-column: 2;
   font-size: 12px; }
-
-.block .title {
-  background-color: #fecaf4;
-  padding-left: 4px;
-  padding-right: 4px;
-  padding-top: 1px;
-  padding-bottom: 1px;
-  margin-top: -1px;
-  margin-bottom: -1px;
-  margin-right: 4px;
-  font-weight: 900; }
 
 #components {
   display: grid;
@@ -164,7 +178,7 @@ li::before {
     grid-area: marketplace; }
   #components #process {
     grid-area: process; }
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 768px) {
     #components {
       grid-template-areas: none;
       grid-auto-flow: row;
@@ -180,7 +194,7 @@ li::before {
     grid-auto-rows: auto;
     grid-gap: 24px;
     align-items: flex-start; }
-    #components .component .title {
+    #components .component h3 {
       background-color: transparent;
       text-align: center; }
     #components .component img {
