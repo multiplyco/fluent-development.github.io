@@ -153,3 +153,42 @@ li::before {
   margin-bottom: -1px;
   margin-right: 4px;
   font-weight: 900; }
+
+#components {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas: ". amp ." "network marketplace process";
+  grid-gap: 24px; }
+  #components #amp {
+    grid-area: amp; }
+  #components #network {
+    grid-area: network; }
+  #components #marketplace {
+    grid-area: marketplace; }
+  #components #process {
+    grid-area: process; }
+  @media only screen and (max-width: 600px) {
+    #components {
+      grid-template-areas: none;
+      grid-auto-flow: row;
+      grid-template-columns: auto;
+      grid-auto-rows: auto; }
+      #components #amp, #components #network, #components #marketplace, #components #process {
+        grid-area: auto; } }
+  #components .component {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto 1fr;
+    grid-auto-flow: row;
+    grid-auto-rows: auto;
+    grid-gap: 24px;
+    align-items: flex-start; }
+    #components .component .title {
+      background-color: transparent;
+      text-align: center; }
+    #components .component img {
+      justify-self: center;
+      max-height: 50px; }
+    #components .component p {
+      hyphens: auto; }

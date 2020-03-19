@@ -51,30 +51,40 @@
      [:li "The Byzantine Empire"]]]])
 
 
-(defn make-component [{:keys [img-src title description]}]
-  [:div.component
-   [:img {:src img-src}]
+(defn make-component [{:keys [id title description]
+                       :img/keys [src]}]
+  [:div.component {:id (name id)}
+   [:img {:src src}]
    [:div.title title]
-   [:p description]])
+   (map #(vector :p %) description)])
 
 (def components
-  [:div.block
+  [:div#components.block
    (make-component
-    {:img-src ""
-     :title "AMP"
-     :description "Autonomy Mastery and Purpose is the core of what the Fluent Way is all about. The platform acts as your own personal Shit Umbrella®."})
+    {:id :amp
+     :img/src "amp.svg"
+     :title "Autonomy. Mastery. Purpose."
+     :description
+     ["Autonomy Mastery and Purpose is the core of what the Fluent Way is all about. The platform acts as your own personal Shit Umbrella®."]})
    (make-component
-    {:img-src ""
+    {:id :network
+     :img/src "network.svg"
      :title "Network"
-     :description "Bla bla bla bla asjkfsd ksdf kasdjf ksadjf lorem ipsum hej hej yo man."})
+     :description
+     ["Today companies often hire too much, too sloppily, and too nearby. The Fluent Network is a global & strongly linked graph of the best people, connected through truly meaningful recommendations. This is how we can help to build your own Virtual Team in a fraction of the time and cost. When you invite someone you trust you put your reputation on the line, but you also gain platform benefits including referral fees and a stronger status in the community as a Connector."]})
    (make-component
-    {:img-src ""
+    {:id :marketplace
+     :img/src "marketplace.svg"
      :title "Marketplace"
-     :description "Bla bla bla bla asjkfsd ksdf kasdjf ksadjf lorem ipsum hej hej yo man."})
+     :description
+     ["As a Market Network, we strive to provide the staging grounds for the full journey from raw idea to finished product – including all the steps in between, including micro-funding if necessary. Think of a Kickstarter for projects."]})
    (make-component
-    {:img-src ""
+    {:id :process
+     :img/src "process.svg"
      :title "Process"
-     :description "Bla bla bla bla asjkfsd ksdf kasdjf ksadjf lorem ipsum hej hej yo man."})])
+     :description
+     ["The Fluent Process is our roadmap from start to finish that makes sure a project outcome has the best chance of success. It starts with the first Raw Idea Workshops with the Client, moves on to Shaping, and then Building where it all comes together."
+      "And with our platform support for Contracts & Escrow (guaranteed payment for delivered and accepted work), the boring and time-consuming overhead busywork that plagues most teams (and particularly individual freelancers) is optimised away."]})])
 
 
 ;; Site structure
