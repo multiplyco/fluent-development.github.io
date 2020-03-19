@@ -144,7 +144,8 @@ li::before {
         align-self: flex-start; } }
 
 .block {
-  margin-top: 48px; }
+  margin-top: 96px;
+  margin-bottom: 48px; }
 
 .columns-2 {
   grid-gap: 24px;
