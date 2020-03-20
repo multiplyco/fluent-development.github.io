@@ -98,7 +98,7 @@
   [:div#content-container
    [:div#menu
     [:img {:src "fl.svg"}]
-    [:ul#menu-items
+    [:ul
      [:li.menu-item "Manifesto"]
      [:li.menu-item "Vision & Process"]
      [:li.menu-item "Culture"]]

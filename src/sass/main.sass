@@ -15,6 +15,10 @@ $mobile-breakpoint: 768px
   font-family: "SF Pro Text", "Helvetica Neue", "Helvetica", "Arial", sans-serif
   line-height: 1.5
 
+@mixin mono-text
+  font-family: "SF Mono", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+  line-height: 1.5
+
 @mixin title-text
   font-family: "SF Pro Text", "Helvetica Neue", "Helvetica", "Arial", sans-serif
   line-height: 1.0
@@ -65,6 +69,16 @@ h3
   margin-right: 4px
   font-weight: 900
 
+button
+  background-color: $foreground-color-primary
+  border-radius: 100px
+  border: none
+  outline: none
+  color: #FFF
+  padding: 12px
+  padding-left: 24px
+  padding-right: 24px
+
 p, li
   @include body-text
   font-size: 18px
@@ -81,6 +95,35 @@ li
   max-width: 1024px
   margin-left: auto
   margin-right: auto
+
+#menu
+  @include mono-text
+  display: grid
+  grid-template-columns: auto 1fr auto 1fr auto
+  grid-template-areas: "logo . menu . button"
+  grid-template-rows: auto
+  grid-gap: 48px
+  margin-bottom: 92px
+  align-items: center
+
+  img
+    grid-area: logo
+    width: 60px
+    height: 60px
+
+  ul
+    grid-area: menu
+    display: grid
+    grid-auto-columns: auto
+    grid-gap: 92px
+    grid-auto-flow: column
+    grid-template-rows: auto
+
+    li
+      @include mono-text
+
+  button
+    grid-area: button
 
 
 // Hero
