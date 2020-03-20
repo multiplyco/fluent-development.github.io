@@ -95,11 +95,19 @@
           :content "width=device-width, initial-scale=1.0"}]
   [:link {:rel "stylesheet" :type "text/css" :href "main.css"}]]
  [:body
-  [:div#hero
-   [:h1 "Fluent."]
-   [:h2 "Welcome to purpose."]
-   [:div.image]]
-  manifesto
-  vision-process
-  inspiration
-  components]]
+  [:div#content-container
+   [:div#menu
+    [:img {:src "fl.svg"}]
+    [:ul#menu-items
+     [:li.menu-item "Manifesto"]
+     [:li.menu-item "Vision & Process"]
+     [:li.menu-item "Culture"]]
+    [:button "Join now"]]
+   [:div#hero
+    [:h1 "Fluent."]
+    [:h2 "Welcome to purpose."]
+    [:div.image]]
+   manifesto
+   vision-process
+   inspiration
+   components]]]

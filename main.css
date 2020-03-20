@@ -60,10 +60,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 body {
   padding: 48px;
-  box-sizing: border-box;
-  max-width: 1024px;
-  margin-left: auto;
-  margin-right: auto; }
+  box-sizing: border-box; }
 
 sup {
   vertical-align: super;
@@ -123,6 +120,11 @@ li::before {
   width: 1em;
   margin-left: -1em; }
 
+#content-container {
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto; }
+
 #hero {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -131,7 +133,8 @@ li::before {
   #hero h1 {
     grid-area: title; }
   #hero h2 {
-    grid-area: subtitle; }
+    grid-area: subtitle;
+    font-weight: normal; }
   #hero .image {
     grid-area: image;
     background-image: url("f.png");
