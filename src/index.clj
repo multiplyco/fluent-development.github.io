@@ -2,7 +2,7 @@
 ;; Site blocks
 ;; ##################################
 (def manifesto
-  [:div.block.columns-2
+  [:div#manifesto.block.columns-2
    [:p.paragraph
     [:span.inline-title "Manifesto."]
     "We believe that work is part of life — life should not be lived in breaks between work."]
@@ -24,7 +24,7 @@
 
 
 (def vision-process
-  [:div.block.columns-2
+  [:div#vision-process.block.columns-2
    [:p.paragraph
     [:span.inline-title "Vision & Process."]
     "These are a few key parts of the Fluent Process and the Fluent vision."]
@@ -39,7 +39,7 @@
     "[3] We believe that humans are not resources, and that with the aid of great processes and tools a person can do their best work from wherever they feel they can do their best work."]])
 
 (def inspiration
-  [:div.block.columns-2
+  [:div#inspiration.block.columns-2
    [:p.paragraph
     [:span.inline-title "Inspiration."]
     "Here are some things that inspire us:"]
@@ -56,33 +56,89 @@
    [:h3 title]
    (map #(vector :p %) description)])
 
-(def components
-  [:div#components.block
+(def amp
+  [:div#culture.block.component-grid
    (make-component
     {:id :amp
      :img/src "amp.svg"
      :title "Autonomy. Mastery. Purpose."
      :description
-     ["Autonomy Mastery and Purpose is the core of what the Fluent Way is all about. The platform acts as your own personal Shit Umbrella®."]})
-   (make-component
-    {:id :network
-     :img/src "network.svg"
-     :title "Network"
-     :description
-     ["Today companies often hire too much, too sloppily, and too nearby. The Fluent Network is a global & strongly linked graph of the best people, connected through truly meaningful recommendations. This is how we can help to build your own Virtual Team in a fraction of the time and cost. When you invite someone you trust you put your reputation on the line, but you also gain platform benefits including referral fees and a stronger status in the community as a Connector."]})
-   (make-component
-    {:id :marketplace
-     :img/src "marketplace.svg"
-     :title "Marketplace"
-     :description
-     ["As a Market Network, we strive to provide the staging grounds for the full journey from raw idea to finished product – including all the steps in between, including micro-funding if necessary. Think of a Kickstarter for projects."]})
-   (make-component
-    {:id :process
-     :img/src "process.svg"
-     :title "Process"
-     :description
-     ["The Fluent Process is our roadmap from start to finish that makes sure a project outcome has the best chance of success. It starts with the first Raw Idea Workshops with the Client, moves on to Shaping, and then Building where it all comes together."
-      "And with our platform support for Contracts & Escrow (guaranteed payment for delivered and accepted work), the boring and time-consuming overhead busywork that plagues most teams (and particularly individual freelancers) is optimised away."]})])
+     ["Autonomy Mastery and Purpose is the core of what the Fluent Way is all about. The platform acts as your own personal Shit Umbrella®."]})])
+
+
+(defn component-title [title]
+  [:div.component-title
+   [:h2.inline-title title]])
+
+(def platform
+  [:div
+   (component-title "Platform")
+   [:div#platform.block.component-grid
+    (make-component
+     {:id :network
+      :img/src "network.svg"
+      :title "Network"
+      :description
+      ["Today companies often hire too much, too sloppily, and too nearby. The Fluent Network is a global & strongly linked graph of the best people, connected through truly meaningful recommendations. This is how we can help to build your own Virtual Team in a fraction of the time and cost. When you invite someone you trust you put your reputation on the line, but you also gain platform benefits including referral fees and a stronger status in the community as a Connector."]})
+    (make-component
+     {:id :marketplace
+      :img/src "marketplace.svg"
+      :title "Marketplace"
+      :description
+      ["As a Market Network, we strive to provide the staging grounds for the full journey from raw idea to finished product – including all the steps in between, including micro-funding if necessary. Think of a Kickstarter for projects."]})
+    (make-component
+     {:id :process
+      :img/src "process.svg"
+      :title "Process"
+      :description
+      ["The Fluent Process is our roadmap from start to finish that makes sure a project outcome has the best chance of success. It starts with the first Raw Idea Workshops with the Client, moves on to Shaping, and then Building where it all comes together."
+       "And with our platform support for Contracts & Escrow (guaranteed payment for delivered and accepted work), the boring and time-consuming overhead busywork that plagues most teams (and particularly individual freelancers) is optimised away."]})]])
+
+
+
+(def roles
+  [:div
+   (component-title "Roles")
+   [:div#roles.block.component-grid
+    (make-component
+     {:id :builder
+      :img/src "builder.svg"
+      :title "Builder"
+      :description
+      ["People are not “resources”, and the word “consultant” is too broad and faceless. We call the people who actually build stuff the Builders. This is not merely a rewording, but a philosophical statement that puts emphasis on creation (and co-creation) – the stuff of action in the world."
+       "In our dictionary, Builders can be any and all of the following professions: coder, designer, architect, product manager, growth hacker, copywriters, and more – anyone where the primary mode of work is creation."
+       "If there is one group of VIPs that the Fluent Platform really aims to super-serve, it is the Builders. We can be superstars at discovering and defining what we should build, but without the people putting the chisel to the stone, or the fingers to the keyboard, nothing concrete will impact the world."]})
+    (make-component
+     {:id :amplifier
+      :img/src "amplifier.svg"
+      :title "Amplifier"
+      :description
+      ["People are not “resources”, and the word “consultant” is too broad and faceless. We call the people who actually build stuff the Builders. This is not merely a rewording, but a philosophical statement that puts emphasis on creation (and co-creation) – the stuff of action in the world."]})
+    (make-component
+     {:id :shaper
+      :img/src "shaper.svg"
+      :title "Shaper"
+      :description
+      ["People are not “resources”, and the word “consultant” is too broad and faceless. We call the people who actually build stuff the Builders. This is not merely a rewording, but a philosophical statement that puts emphasis on creation (and co-creation) – the stuff of action in the world."]})
+    (make-component
+     {:id :connector
+      :img/src "connector.svg"
+      :title "Connector"
+      :description
+      ["People are not “resources”, and the word “consultant” is too broad and faceless. We call the people who actually build stuff the Builders. This is not merely a rewording, but a philosophical statement that puts emphasis on creation (and co-creation) – the stuff of action in the world."]})
+    (make-component
+     {:id :client
+      :img/src "client.svg"
+      :title "Client"
+      :description
+      ["People are not “resources”, and the word “consultant” is too broad and faceless. We call the people who actually build stuff the Builders. This is not merely a rewording, but a philosophical statement that puts emphasis on creation (and co-creation) – the stuff of action in the world."]})]])
+
+
+(def join
+  [:div#join.block
+   (component-title "Join now")
+   [:div#join-inner
+    [:input#join-grunka {:placeholder "THIS IS AN INPUT FIELD! Sign up to let us know you’re interested, and to apply for beta access 🙏🏻"}]]])
 
 
 ;; Site structure
@@ -99,9 +155,9 @@
    [:div#menu
     [:img {:src "fl.svg"}]
     [:ul
-     [:li.menu-item "Manifesto"]
-     [:li.menu-item "Vision & Process"]
-     [:li.menu-item "Culture"]]
+     [:li.menu-item [:a {:href "#manifesto"} "Manifesto"]]
+     [:li.menu-item [:a {:href "#vision-process"} "Vision & Process"]]
+     [:li.menu-item [:a {:href "#culture"} "Culture"]]]
     [:button "Join now"]]
    [:div#hero
     [:h1 "Fluent."]
@@ -110,4 +166,12 @@
    manifesto
    vision-process
    inspiration
-   components]]]
+   [:hr]
+   amp
+   [:hr]
+   platform
+   [:hr]
+   roles
+   [:hr]
+   join]
+  [:footer.block "@ 2019-2020 Fluent Development AB, c/o Norrsken House, Stockholm. Terms of use & cookie policy."]]]
