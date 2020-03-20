@@ -138,7 +138,7 @@
   [:div#join.block
    (component-title "Join now")
    [:div#join-inner
-    [:input#join-grunka {:placeholder "THIS IS AN INPUT FIELD! Sign up to let us know you’re interested, and to apply for beta access 🙏🏻"}]]])
+    [:input#join-grunka {:placeholder "Sign up to get started 🙏🏻"}]]])
 
 
 ;; Site structure
