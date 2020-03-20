@@ -144,7 +144,8 @@ li::before {
   color: #E200B0;
   display: inline-block;
   width: 1em;
-  margin-left: -1em; }
+  margin-left: -1em;
+  padding-left: 18px; }
 
 strong {
   font-weight: 600; }
