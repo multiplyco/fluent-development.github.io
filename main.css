@@ -125,6 +125,32 @@ li::before {
   margin-left: auto;
   margin-right: auto; }
 
+#menu {
+  font-family: "SF Mono", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  line-height: 1.5;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-template-rows: auto;
+  grid-gap: 48px; }
+  #menu img {
+    width: 95px;
+    height: 95px; }
+  #menu ul {
+    display: grid;
+    grid-auto-columns: auto;
+    grid-gap: 92px;
+    grid-auto-flow: column;
+    grid-template-rows: auto; }
+    #menu ul li {
+      font-family: "SF Mono", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+      line-height: 1.5; }
+  #menu button {
+    background-color: E200B0;
+    border-radius: 100px;
+    border: none;
+    outline: none;
+    color: #FFF; }
+
 #hero {
   display: grid;
   grid-template-columns: 2fr 1fr;

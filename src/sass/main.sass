@@ -15,6 +15,10 @@ $mobile-breakpoint: 768px
   font-family: "SF Pro Text", "Helvetica Neue", "Helvetica", "Arial", sans-serif
   line-height: 1.5
 
+@mixin mono-text
+  font-family: "SF Mono", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+  line-height: 1.5
+
 @mixin title-text
   font-family: "SF Pro Text", "Helvetica Neue", "Helvetica", "Arial", sans-serif
   line-height: 1.0
@@ -81,6 +85,34 @@ li
   max-width: 1024px
   margin-left: auto
   margin-right: auto
+
+#menu
+  @include mono-text
+  display: grid
+  grid-template-columns: auto 1fr auto
+  grid-template-rows: auto
+  grid-gap: 48px
+
+  img
+    width: 95px
+    height: 95px
+
+  ul
+    display: grid
+    grid-auto-columns: auto
+    grid-gap: 92px
+    grid-auto-flow: column
+    grid-template-rows: auto
+
+    li
+      @include mono-text
+
+  button
+    background-color: $foreground-color-primary
+    border-radius: 100px
+    border: none
+    outline: none
+    color: #FFF
 
 
 // Hero
