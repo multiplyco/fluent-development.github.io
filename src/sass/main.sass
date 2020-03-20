@@ -117,6 +117,10 @@ li
   margin-bottom: 48px
   background-color: #fff
   border-radius: 0 0 48px 48px
+  box-sizing: border-box
+
+  @media only screen and (max-width: $mobile-breakpoint)
+    padding: 48px
 
 footer
   @include body-text
@@ -362,7 +366,7 @@ footer
     color: $foreground-color-primary
     font-size: 18px
     display: block
-    min-width: 300px
+    min-width: 250px
     height: 48px
     border-radius: 100px
     border: 1px solid $foreground-color-primary

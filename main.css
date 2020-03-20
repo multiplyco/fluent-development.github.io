@@ -155,7 +155,11 @@ li::before {
   margin-right: auto;
   margin-bottom: 48px;
   background-color: #fff;
-  border-radius: 0 0 48px 48px; }
+  border-radius: 0 0 48px 48px;
+  box-sizing: border-box; }
+  @media only screen and (max-width: 768px) {
+    #content-container {
+      padding: 48px; } }
 
 footer {
   font-family: "SF Pro Text", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
