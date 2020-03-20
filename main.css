@@ -127,7 +127,8 @@ button {
   padding: 12px;
   padding-left: 24px;
   padding-right: 24px;
-  font-size: 18px; }
+  font-size: 18px;
+  white-space: nowrap; }
 
 a {
   color: #E200B0;
@@ -150,7 +151,7 @@ li::before {
   padding: 48px;
   padding-left: 96px;
   padding-right: 96px;
-  max-width: 1024px;
+  max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 48px;
