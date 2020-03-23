@@ -52,10 +52,11 @@
 (defn make-component [{:keys [id title description]
                        :img/keys [src]}]
   [:div.component {:id (name id)}
-   [:div.component-inner
-    [:img {:src src}]
-    [:h3 title]
-    description]])
+   (into
+     [:div.component-inner
+      [:img {:src src}]
+      [:h3 title]]
+     description)])
 
 (def amp
   [:div#culture.block.component-grid
@@ -106,8 +107,8 @@
       :title "Builder"
       :description
       [[:p "People are not “resources”, and the word “consultant” is too broad and faceless. We call the people who actually build stuff the " [:strong "Builders"] ". This is not merely a rewording, but a philosophical statement that puts emphasis on creation (and co-creation) – the stuff of action in the world."]
-       "In our dictionary, Builders can be any and all of the following professions: coder, designer, architect, product manager, growth hacker, copywriters, and more – anyone where the primary mode of work is creation."
-       "If there is one group of VIPs that the Fluent Platform really aims to super-serve, it is the Builders. We can be superstars at discovering and defining what we should build, but without the people putting the chisel to the stone, or the fingers to the keyboard, nothing concrete will impact the world."]})
+       [:p "In our dictionary, Builders can be any and all of the following professions: coder, designer, architect, product manager, growth hacker, copywriters, and more – anyone where the primary mode of work is creation."]
+       [:p "If there is one group of VIPs that the Fluent Platform really aims to super-serve, it is the Builders. We can be superstars at discovering and defining what we should build, but without the people putting the chisel to the stone, or the fingers to the keyboard, nothing concrete will impact the world."]]})
     (make-component
      {:id :amplifier
       :img/src "amplifier.svg"

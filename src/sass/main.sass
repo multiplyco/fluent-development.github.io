@@ -206,34 +206,15 @@ footer
 // Hero
 // ################################################
 #hero
-  display: grid
-  grid-template-columns: 2fr 1fr
-  grid-template-rows: auto auto
-  grid-template-areas: "title image" "subtitle image"
   margin-bottom: 96px
 
   h1
-    grid-area: title
     margin-bottom: 48px
 
   h2
-    grid-area: subtitle
     font-weight: 300
 
-  .image
-    grid-area: image
-    background-image: url("f.png")
-    background-position: center
-    background-size: contain
-    background-repeat: no-repeat
-    min-width: 60px
-    min-height: 60px
-
-  @media only screen and (max-width: $mobile-breakpoint)
-    grid-template-areas: "title image" "subtitle subtitle"
-
-    .image
-      align-self: flex-start
+  //@media only screen and (max-width: $mobile-breakpoint)
 
 
 // Blocks
