@@ -8,7 +8,7 @@
     "We believe that work is part of life &mdash; life should not be lived in breaks between work."]
 
    [:p.paragraph
-    "Today’s technology makes it possible to do knowledge work, and soon almost all kinds of work, from most places on earth (and soon beyond). But most companies still think locally and narrowly about their \"human resources\"" [:sup "1"] ", forcing many to work long hours in environments where focus and flow and unstress is not a priority."]
+    "Today’s technology makes it possible to do knowledge work, and soon almost all kinds of work, from " [:a {:href "https://www.starlink.com/"} "practically anywhere"] ". But many companies still think locally and narrowly about their \"human resources\"" [:sup "1"] ", forcing many to work long hours in environments where focus and flow and unstress is not a priority."]
 
    [:p.footnote
     "[1] Our replacement words for “human resource” or “consultant”, for all the important roles that a project needs, can be found " [:a {:href "#roles"} "farther down this webpage"] ". But the most important in our minds is the " [:strong "Builder"] " &mdash; a person whose primary responsibility in a project is to build and create new things."]
@@ -23,10 +23,10 @@
     "[2] Co-creation is when people get together with the primary purpose to make something larger than themselves, to join in a collaboration of creation and stand on the shoulders of giants. Cf with global themes like the " [:a {:href "https://makezine.com"} "Maker movement"] ", or the " [:a {:href "https://burningman.org"} "Burning Man conference"] " in Nevada."]])
 
 (def vision-process
-  [:div#vision-process.block.columns-2
+  [:div#culture-process.block.columns-2
    [:p.paragraph
-    [:span.inline-title "Vision & Process."]
-    "These are a few key parts of the Fluent Process and the Fluent vision."]
+    [:span.inline-title "Culture & Process."]
+    "These are a few key parts of the Fluent Culture and our Process."]
    [:ul.paragraph
     [:li [:strong "Autonomy, Mastery, and Purpose (" [:a {:href "#amp"} "AMP"] "" [:sup 3] ")"] " over hierarchies, forced promotions, and working without caring."]
     [:li [:strong "Fixed appetite and variable scope"] " over fixed scope and false delivery dates."]
@@ -59,13 +59,13 @@
     description)])
 
 (def amp
-  [:div#culture.block.component-grid
+  [:div#amp.block.component-grid
    (make-component
     {:id :amp
      :img/src "amp.svg"
      :title "Autonomy. Mastery. Purpose."
      :description
-     [[:p "It is the core of what the Fluent Way is all about. Originated by Daniel Pink in his book " [:strong "Drive"] ", #AMP defines our set of core values at Fluent. It crystalises three critical things that motivate us humans to do our best work: the desire for freedom, the striving for constant learning and improvement, and a sense of meaning in whatever we do."]
+     [[:p "It is the core of what the Fluent Way is all about. Originated by Daniel Pink in his book " [:strong "Drive"] ", AMP defines our set of core values at Fluent. It crystalises three critical things that motivate us humans to do our best work: the desire for freedom, the striving for constant learning and improvement, and a sense of meaning in whatever we do."]
       [:p "When all three values are met, at least in some way, this can result in the rarified state of " [:a {:href "https://en.wikipedia.org/wiki/Flow_(psychology)"} "flow"] " – that optimum state of creativity, problem solving, and an overall sense of well-being and meaning in the world."]]})])
 
 (defn component-title [title]
@@ -73,9 +73,9 @@
    [:h2.inline-title title]])
 
 (def platform
-  [:div
+  [:div#platform
    (component-title "Platform")
-   [:div#platform.block.component-grid
+   [:div#platform-components.block.component-grid
     (make-component
      {:id :network
       :img/src "network.svg"
@@ -135,7 +135,9 @@
       :img/src "client.svg"
       :title "Client"
       :description
-      [[:p "Partnering with an Amplifier, clients who bring great projects will be able to make use of the Fluent Platform in the best and most efficient way possible."]]})]])
+      [[:p "As key participants in the Fluent Platform, clients share our values and believe AMP is the best way to generate both great results and happy teams that can produce great long-term value in a sustainable way."]
+       [:p "Clients come to Fluent to access the best Builders, and to get more work done with less friction and higher quality. Their know-how about their own industries and businesses is a great source of learning for everyone in the network."]
+       [:p "Great clients bring vision and meaning to their projects, leveraging the world-class talent in the Fluent Network to change the world bit by bit, fulfilling both individual aims and the common goals we all share."]]})]])
 
 (def join
   [:div#join.block
@@ -158,11 +160,11 @@
     [:img {:src "fl.svg"}]
     [:ul
      [:li.menu-item [:a {:href "#manifesto"} "Manifesto"]]
-     [:li.menu-item [:a {:href "#vision-process"} "Vision & Process"]]
-     [:li.menu-item [:a {:href "#culture"} "Culture"]]]
+     [:li.menu-item [:a {:href "#culture-process"} "Culture & Process"]]
+     [:li.menu-item [:a {:href "#platform"} "Platform"]]]
     [:a.button {:href "#join"} "Join now"]]
    [:div#hero
-    [:h1 "Fluent."]
+    [:h1 "Fluent"]
     [:h2 "Welcome to autonomy, mastery, and purpose."]
     [:div.image]]
    manifesto

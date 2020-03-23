@@ -165,7 +165,7 @@ li::before {
   padding-left: 18px; }
 
 strong {
-  font-weight: normal; }
+  font-weight: 900; }
 
 em {
   font-style: italic; }
@@ -290,33 +290,33 @@ footer {
 
 .component-grid {
   display: grid;
-  grid-column-gap: 48px;
+  grid-column-gap: 72px;
   grid-row-gap: 72px;
   grid-auto-rows: auto; }
 
-#culture {
+#amp {
   grid-template-columns: 1fr 3fr 1fr;
   grid-template-areas: ". amp ."; }
-  #culture #amp {
+  #amp #amp {
     grid-area: amp; }
   @media only screen and (max-width: 868px) {
-    #culture {
+    #amp {
       grid-template-areas: none;
       grid-auto-flow: row;
       grid-template-columns: auto;
       grid-auto-rows: auto; }
-      #culture #amp {
+      #amp #amp {
         grid-area: auto; } }
 
-#platform {
+#platform-components {
   grid-template-columns: 1fr 1fr 1fr; }
   @media only screen and (max-width: 868px) {
-    #platform {
+    #platform-components {
       grid-template-areas: none;
       grid-auto-flow: row;
       grid-template-columns: auto;
       grid-auto-rows: auto; }
-      #platform #network, #platform #marketplace, #platform #process {
+      #platform-components #network, #platform-components #marketplace, #platform-components #process {
         grid-area: auto; } }
 
 #roles {
