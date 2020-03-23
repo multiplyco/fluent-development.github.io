@@ -53,10 +53,10 @@
                        :img/keys [src]}]
   [:div.component {:id (name id)}
    (into
-     [:div.component-inner
-      [:img {:src src}]
-      [:h3 title]]
-     description)])
+    [:div.component-inner
+     [:img {:src src}]
+     [:h3 title]]
+    description)])
 
 (def amp
   [:div#culture.block.component-grid
@@ -163,7 +163,7 @@
     [:a.button {:href "#join"} "Join now"]]
    [:div#hero
     [:h1 "Fluent."]
-    [:h2 "Welcome to purpose."]
+    [:h2 "Welcome to autonomy, mastery, and purpose."]
     [:div.image]]
    manifesto
    vision-process
