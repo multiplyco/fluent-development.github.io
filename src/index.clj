@@ -118,23 +118,24 @@
       :img/src "images/shaper.svg"
       :title "Shaper"
       :description
-      [[:p "The other key role in Fluent is the Shaper. This person works tightly with the Amplifier and the Client during the earliest phase of each project, to define what should be built and how."]
-       [:p "During the " [:strong "Shaping phase"] ", we also start to get an idea of the technical and other requirements, and can start to look for the best Builders to help make this hypothesis into reaily."]]})
+      [[:p "The other key role in Fluent is the Shaper. This person works tightly with the Amplifier and the Client during the earliest phase of each project, to define what should be built and how. They are also crucial for working continuously over several cycles to shape long-term projects."]
+       [:p "The result of the " [:strong "Shaping"] " phase is the " [:strong "Pitch"] ", which is the foundation of any project and describes what will be built during a " [:strong "Build Cycle"] "."]
+       [:p "During the shaping we also start to get an idea of technical and other requirements, and can start to look for the best Builders to help make this hypothesis into reaily."]]})
+    (make-component
+     {:id :client
+      :img/src "images/client.svg"
+      :title "Client"
+      :description
+      [[:p "As a participant in the Fluent Platform, the Client share our values and agrees that AMP is the best way to generate both great results and happy teams that can produce great long-term value in a " [:strong "sustainable"] " way."]
+       [:p "Clients come to Fluent to access the best Builders, and to get more work done with less friction and higher quality. Their experience and deep understanding of their own industries and businesses is a great source of learning for everyone in the network."]
+       [:p "Great clients bring a sense of purpose and long-term vision to their projects, leveraging the world-class talent in the Fluent Network to change the world bit by bit. This helps to fulfil both individual aims and the common goals we all share."]]})
     (make-component
      {:id :connector
       :img/src "images/connector.svg"
       :title "Connector"
       :description
       [[:p "Think of the Connector as a combination of talent scout, recruiter, mentor, and knower of technical stuff. This role is the key to help evaluating a project’s need for people, and then setting out to discover them."]
-       [:p "Availability is one of the trickiest parts of the job &mdash; you don’t just need the best people, with the right skills, and highly motivated to join a project; you also need them at the right time. The Fluent Platform helps with this by introducing " [:strong "Availability Schedules"] " for each member of the Network. A project can set a desired date range for when it could start the Build phase, and our search algorithm will help match that plan against people who actually have the time to do the work."]]})
-    (make-component
-     {:id :client
-      :img/src "images/client.svg"
-      :title "Client"
-      :description
-      [[:p "As key participants in the Fluent Platform, clients share our values and believe AMP is the best way to generate both great results and happy teams that can produce great long-term value in a sustainable way."]
-       [:p "Clients come to Fluent to access the best Builders, and to get more work done with less friction and higher quality. Their know-how about their own industries and businesses is a great source of learning for everyone in the network."]
-       [:p "Great clients bring vision and meaning to their projects, leveraging the world-class talent in the Fluent Network to change the world bit by bit, fulfilling both individual aims and the common goals we all share."]]})]])
+       [:p "Availability is one of the trickiest parts of the job: you don’t just need the best people, with the right skills, and highly motivated to join a project; you also need them at the right time. The Fluent Platform helps with this by introducing " [:strong "Availability Schedules"] " for each member of the network &mdash; a project can set a desired date range for when it could start the Build phase, and our search algorithm will help match that plan against the best people who " [:em "also actually have the time"] " to do the work."]]})]])
 
 (def join
   [:div#join.block

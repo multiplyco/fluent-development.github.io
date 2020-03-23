@@ -330,7 +330,7 @@ footer {
   grid-template-columns: 1fr 1fr 1fr 1fr; }
   #roles-components .component {
     grid-column: span 2; }
-  #roles-components #client {
+  #roles-components #connector {
     grid-column: 2/4; }
   @media only screen and (max-width: 868px) {
     #roles-components {
@@ -338,7 +338,7 @@ footer {
       grid-auto-flow: row;
       grid-template-columns: auto;
       grid-auto-rows: auto; }
-      #roles-components .component, #roles-components #client {
+      #roles-components .component, #roles-components #connector {
         grid-column: auto; } }
 
 .component-inner {
