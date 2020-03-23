@@ -336,7 +336,7 @@ footer {
       #roles .component, #roles #client {
         grid-column: auto; } }
 
-.component {
+.component-inner {
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: auto auto 1fr;
@@ -344,10 +344,10 @@ footer {
   grid-auto-rows: auto;
   grid-gap: 24px;
   align-items: flex-start; }
-  .component h3 {
+  .component-inner h3 {
     background-color: transparent;
     text-align: center; }
-  .component img {
+  .component-inner img {
     justify-self: center;
     max-height: 50px; }
 

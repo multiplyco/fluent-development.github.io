@@ -52,9 +52,10 @@
 (defn make-component [{:keys [id title description]
                        :img/keys [src]}]
   [:div.component {:id (name id)}
-   [:img {:src src}]
-   [:h3 title]
-   (map #(vector :p %) description)])
+   [:div.component-inner
+    [:img {:src src}]
+    [:h3 title]
+    (map #(vector :p %) description)]])
 
 (def amp
   [:div#culture.block.component-grid

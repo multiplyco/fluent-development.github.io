@@ -14,7 +14,7 @@
     "sass:dev": "./node_modules/nodemon/bin/nodemon.js -e sass -x \"yarn sass:compile\"",
     "build": "yarn build:index && yarn sass:release",
     "build:dev": "./node_modules/nodemon/bin/nodemon.js -e clj -x \"yarn build:html || exit 1\"",
-    "serve": "./node_modules/http-server/bin/http-server"
+    "serve": "./node_modules/http-server/bin/http-server && open localhost:8080"
   },
   "dependencies": {
     "http-server": "^0.12.1",
