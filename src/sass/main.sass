@@ -24,9 +24,11 @@ $font-light: 300
 @include font-face(sf-ui-display-light, fonts/SF-UI-Display-Light, null, null, woff2 woff)
 
 $font-family-bold: "sf-ui-display-bold", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+$font-family-regular: "sf-ui-display-regular", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+$font-family-light: "sf-ui-display-light", "Helvetica Neue", "Helvetica", "Arial", sans-serif
 
 @mixin body-text
-  font-family: "sf-ui-display-regular", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+  font-family: $font-family-regular
   line-height: 1.5
 
 @mixin mono-text
@@ -39,7 +41,7 @@ $font-family-bold: "sf-ui-display-bold", "Helvetica Neue", "Helvetica", "Arial",
   font-weight: $font-strong
 
 @mixin title-text-light
-  font-family: "sf-ui-display-light", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+  font-family: $font-family-light
   line-height: 1.0
   font-weight: $font-strong
 
