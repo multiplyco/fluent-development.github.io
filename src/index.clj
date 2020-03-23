@@ -55,7 +55,7 @@
    [:div.component-inner
     [:img {:src src}]
     [:h3 title]
-    (map #(vector :p %) description)]])
+    description]])
 
 (def amp
   [:div#culture.block.component-grid
@@ -64,8 +64,8 @@
      :img/src "amp.svg"
      :title "Autonomy. Mastery. Purpose."
      :description
-     [[:span "It is the core of what the Fluent Way is all about. Originated by Daniel Pink in his book " [:strong "Drive"] ", #AMP defines our set of core values at Fluent. It crystalises three critical things that motivate us humans to do our best work: the desire for freedom, the striving for constant learning and improvement, and a sense of meaning in whatever we do."]
-      [:span "When all three values are met, at least in some way, this can result in the rarified state of " [:a {:href "https://en.wikipedia.org/wiki/Flow_(psychology)"} "flow"] " – that optimum state of creativity, problem solving, and an overall sense of well-being and meaning in the world."]]})])
+     [[:p "It is the core of what the Fluent Way is all about. Originated by Daniel Pink in his book " [:strong "Drive"] ", #AMP defines our set of core values at Fluent. It crystalises three critical things that motivate us humans to do our best work: the desire for freedom, the striving for constant learning and improvement, and a sense of meaning in whatever we do."]
+      [:p "When all three values are met, at least in some way, this can result in the rarified state of " [:a {:href "https://en.wikipedia.org/wiki/Flow_(psychology)"} "flow"] " – that optimum state of creativity, problem solving, and an overall sense of well-being and meaning in the world."]]})])
 
 (defn component-title [title]
   [:div.component-title
@@ -80,21 +80,21 @@
       :img/src "network.svg"
       :title "Network"
       :description
-      ["Today companies often hire too much, too sloppily, and too nearby. The Fluent Network is a global & strongly linked graph of the best people, connected through truly meaningful recommendations. This is how we can help to build your own Virtual Team in a fraction of the time and cost. "
-       "When you invite someone you trust you put your reputation on the line, but you also gain platform benefits including referral fees and a stronger status in the community as a Connector."]})
+      [[:p "Today companies often hire too much, too sloppily, and too nearby. The Fluent Network is a global & strongly linked graph of the best people, connected through truly meaningful recommendations. This is how we can help to build your own Virtual Team in a fraction of the time and cost. "]
+       [:p "When you invite someone you trust you put your reputation on the line, but you also gain platform benefits including referral fees and a stronger status in the community as a Connector."]]})
     (make-component
      {:id :marketplace
       :img/src "marketplace.svg"
       :title "Marketplace"
       :description
-      ["As a Market Network, we strive to provide the staging grounds for the full journey from raw idea to finished product – including all the steps in between, including micro-funding if necessary. Think of a Kickstarter for projects."]})
+      [[:p "As a Market Network, we strive to provide the staging grounds for the full journey from raw idea to finished product – including all the steps in between, including micro-funding if necessary. Think of a Kickstarter for projects."]]})
     (make-component
      {:id :process
       :img/src "process.svg"
       :title "Process"
       :description
-      ["The Fluent Process is our roadmap from start to finish that makes sure a project outcome has the best chance of success. It starts with the first Raw Idea Workshops with the Client, moves on to Shaping, and then Building where it all comes together."
-       [:span "And with our platform support for " [:strong "Contracts & Escrow"] " (guaranteed payment for delivered and accepted work), the boring and time-consuming overhead busywork that plagues most teams (and particularly individual freelancers) is optimised away."]]})]])
+      [[:p "The Fluent Process is our roadmap from start to finish that makes sure a project outcome has the best chance of success. It starts with the first Raw Idea Workshops with the Client, moves on to Shaping, and then Building where it all comes together."]
+       [:p "And with our platform support for " [:strong "Contracts & Escrow"] " (guaranteed payment for delivered and accepted work), the boring and time-consuming overhead busywork that plagues most teams (and particularly individual freelancers) is optimised away."]]})]])
 
 (def roles
   [:div
@@ -105,7 +105,7 @@
       :img/src "builder.svg"
       :title "Builder"
       :description
-      [[:span "People are not “resources”, and the word “consultant” is too broad and faceless. We call the people who actually build stuff the " [:strong "Builders"] ". This is not merely a rewording, but a philosophical statement that puts emphasis on creation (and co-creation) – the stuff of action in the world."]
+      [[:p "People are not “resources”, and the word “consultant” is too broad and faceless. We call the people who actually build stuff the " [:strong "Builders"] ". This is not merely a rewording, but a philosophical statement that puts emphasis on creation (and co-creation) – the stuff of action in the world."]
        "In our dictionary, Builders can be any and all of the following professions: coder, designer, architect, product manager, growth hacker, copywriters, and more – anyone where the primary mode of work is creation."
        "If there is one group of VIPs that the Fluent Platform really aims to super-serve, it is the Builders. We can be superstars at discovering and defining what we should build, but without the people putting the chisel to the stone, or the fingers to the keyboard, nothing concrete will impact the world."]})
     (make-component
@@ -113,28 +113,28 @@
       :img/src "amplifier.svg"
       :title "Amplifier"
       :description
-      [[:span "If there is one role that we consider both key and unique to Fluent, it is the " [:strong "Amplifier&trade;"] ". Think of it as a Key Account Manager 2.0, or an entrepreneur-PM-sales unicorn type of personality, who together with the Shaper are the key components in getting a project off the ground."]
-       [:span "On the Fluent Platform, the Amplifier is the person who acts as a bridge between the Builders and the Clients – protecting the former from “bad money” and unnecessary interference (to let them focus on their work), and equally important protecting the latter against bad results. With our " [:strong "Fluent Mediation&trade; process"] ", we can help deal with disputes in the best way possible."]]})
+      [[:p "If there is one role that we consider both key and unique to Fluent, it is the " [:strong "Amplifier&trade;"] ". Think of it as a Key Account Manager 2.0, or an entrepreneur-PM-sales unicorn type of personality, who together with the Shaper are the key components in getting a project off the ground."]
+       [:p "On the Fluent Platform, the Amplifier is the person who acts as a bridge between the Builders and the Clients – protecting the former from “bad money” and unnecessary interference (to let them focus on their work), and equally important protecting the latter against bad results. With our " [:strong "Fluent Mediation&trade; process"] ", we can help deal with disputes in the best way possible."]]})
     (make-component
      {:id :shaper
       :img/src "shaper.svg"
       :title "Shaper"
       :description
-      ["The other key role in Fluent is the Shaper. This person works tightly with the Amplifier and the Client during the earliest phase of each project, to define what should be built and how."
-       [:span "During the " [:strong "Shaping phase"] ", we also start to get an idea of the technical and other requirements, and can start to look for the best Builders to help make this hypothesis into reaily."]]})
+      [[:p "The other key role in Fluent is the Shaper. This person works tightly with the Amplifier and the Client during the earliest phase of each project, to define what should be built and how."]
+       [:p "During the " [:strong "Shaping phase"] ", we also start to get an idea of the technical and other requirements, and can start to look for the best Builders to help make this hypothesis into reaily."]]})
     (make-component
      {:id :connector
       :img/src "connector.svg"
       :title "Connector"
       :description
-      ["Think of the Connector as a combination of talent scout, recruiter, mentor, and knower of technical stuff. This role is the key to help evaluating a project’s need for people, and then setting out to discover them."
-       [:span "Availability is one of the trickiest parts of the job – you don’t just need the best people, with the right skills, and highly motivated to join a project; you also need them at the right time. The Fluent Platform helps with this by introducing " [:strong "Availability Schedules"] " for each member of the Network. A project can set a desired date range for when it could start the Build phase, and our search algorithm will help match that plan against people who actually have the time to do the work."]]})
+      [[:p "Think of the Connector as a combination of talent scout, recruiter, mentor, and knower of technical stuff. This role is the key to help evaluating a project’s need for people, and then setting out to discover them."]
+       [:p "Availability is one of the trickiest parts of the job – you don’t just need the best people, with the right skills, and highly motivated to join a project; you also need them at the right time. The Fluent Platform helps with this by introducing " [:strong "Availability Schedules"] " for each member of the Network. A project can set a desired date range for when it could start the Build phase, and our search algorithm will help match that plan against people who actually have the time to do the work."]]})
     (make-component
      {:id :client
       :img/src "client.svg"
       :title "Client"
       :description
-      ["Partnering with an Amplifier, clients who bring great projects will be able to make use of the Fluent Platform in the best and most efficient way possible."]})]])
+      [[:p "Partnering with an Amplifier, clients who bring great projects will be able to make use of the Fluent Platform in the best and most efficient way possible."]]})]])
 
 (def join
   [:div#join.block
