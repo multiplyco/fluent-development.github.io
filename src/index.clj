@@ -149,20 +149,44 @@
 ;; ##################################
 [:html
  [:head
-  [:title "Fluent"]
+  [:title "Fluent: The global market network for professional co-creation"]
   [:meta {:charset "utf-8"}]
   [:meta {:name    "viewport"
           :content "width=device-width, initial-scale=1.0"}]
-  [:link {:rel "stylesheet" :type "text/css" :href "main.css"}]]
+  [:meta {:name "description"
+          :content "Fluent is a global market network for professional co-creation, with a platform that helps builders and clients come together to make the best projects possible while minimising boring overhead busywork. Welcome to AMP – autonomy, mastery, and purpose."}]
+  [:meta {:name "og:title"
+          :content "The global market network for professional co-creation – Fluent"}]
+  [:meta {:name "og:url"
+          :content "https://fluent.to"}]
+  [:meta {:name "og:description"
+          :content "Fluent is a global market network for professional co-creation, with a platform that helps builders and clients come together to make the best projects possible while minimising boring overhead busywork. Welcome to AMP – autonomy, mastery, and purpose."}]
+  [:meta {:name "og:image"
+          :content "https://fluent.to/images/fluent-logo-512px.png"}]
+  [:meta {:name "twitter:card"
+          :content "summary"}]
+  [:meta {:name "twitter:image"
+          :content "https://fluent.to/images/fluent-logo-512px.png"}]
+  [:meta {:name "twitter:site"
+          :content "@FluentNetwork"}]
+  [:meta {:name "twitter:title"
+          :content "The global market network for professional co-creation – Fluent"}]
+  [:meta {:name "twitter:description"
+          :content "Fluent is a global market network for professional co-creation, with a platform that helps builders and clients come together to make the best projects possible while minimising boring overhead busywork. Welcome to AMP – autonomy, mastery, and purpose."}]
+  [:link {:rel "stylesheet" :type "text/css" :href "main.css"}]
+  [:link {:rel "canonical" :href "https://fluent.to/"}]
+  [:link {:rel "shortcut icon" :href "/favicon.ico"}]
+  [:link {:rel "icon" :type "image/png" :sizes "96x96" :href "/favicon-96x96.ico"}]
+  [:link {:rel "apple-touch-icon" :sizes "180x180" :href "/images/apple-icon-180x180.png"}]]
  [:body
   [:div#content-container
    [:div#menu
-    [:a {:href ""} [:img {:src "images/fl.svg"}]]
+    [:a {:href "#"} [:img {:src "images/fluent-logo.svg"}]]
     [:ul
      [:li.menu-item [:a {:href "#manifesto"} "Manifesto"]]
      [:li.menu-item [:a {:href "#culture-process"} "Culture & Process"]]
      [:li.menu-item [:a {:href "#platform"} "Platform"]]]
-    [:a.button {:href "#join"} "Join now"]]
+    [:a.button {:href "https://airtable.com/shrIqZyY1ayFGxeXl"} "Join now"]]
    [:div#hero
     [:h1 "Fluent"]
     [:h2 "Welcome to autonomy, mastery, and purpose."]
@@ -175,9 +199,9 @@
    [:hr]
    platform
    [:hr]
-   roles
-   [:hr]
-   join]
+   roles]
+   ;;[:hr]]
+   ;;join]
   [:footer.block
    "@ 2019-2020 Fluent Development AB, c/o " [:a {:href "https://www.norrskenhouse.org"} "Norrsken House"] " in Stockholm. "
    [:a {:href ""} "Terms of use & cookie policy."]]]]

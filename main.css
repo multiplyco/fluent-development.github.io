@@ -176,7 +176,8 @@ em {
   font-style: italic; }
 
 #content-container {
-  padding: 48px;
+  padding-top: 48px;
+  padding-bottom: 96px;
   padding-left: 96px;
   padding-right: 96px;
   max-width: 1280px;
