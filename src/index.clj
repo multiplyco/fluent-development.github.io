@@ -11,7 +11,7 @@
     "Today’s technology makes it possible to do knowledge work, and soon almost all kinds of work, from " [:a {:href "https://www.starlink.com/"} "practically anywhere"] ". But many companies still think locally and narrowly about their \"human resources\"" [:sup "1"] ", forcing many to work long hours in environments where focus and flow and unstress is not a priority."]
 
    [:p.footnote
-    "[1] Our replacement words for “human resource” or “consultant”, for all the important roles that a project needs, can be found " [:a {:href "#roles"} "below"] ". But the most important in our minds is the " [:strong "Builder"] " &mdash; a person whose primary responsibility in a project is to build and create new things."]
+    "[1] Our replacement words for “human resource” or “consultant”, for all the important roles that a project needs, can be found " [:a {:href "#roles"} "below"] ". The most critical role in our mind is the " [:strong "Builder"] " &mdash; the person whose primary responsibility is to create and build new things."]
 
    [:p.paragraph
     "We believe that humans are not resources, and that with the aid of great processes and tools a person can do their best work from wherever they feel they can do their best work."]
@@ -20,7 +20,7 @@
     "Fluent aims to build the platform to facilitate this future workplace. It is a distributed, flexible, virtual workplace, tailor made for co-creation" [:sup "2"] ", which helps connect the best people with the most meaningful projects irregardless of physical location, and takes care of the incidental complexity and overhead of running great projects with great outcomes."]
 
    [:p.footnote
-    "[2] Co-creation is when people get together with the primary purpose to make something larger than themselves, to join in a collaboration of creation and stand on the shoulders of giants. Cf with global themes like the " [:a {:href "https://makezine.com"} "Maker movement"] ", or the " [:a {:href "https://burningman.org"} "Burning Man conference"] " in Nevada."]])
+    "[2] Co-creation is when people get together with the primary purpose to make something larger than themselves, to join in a collaboration of creation and stand on the shoulders of giants. Cf with global themes like the " [:a {:href "https://makezine.com"} "Maker movement"] ", and the " [:a {:href "https://burningman.org"} "Burning Man conference"] " in Nevada."]])
 
 (def vision-process
   [:div#culture-process.block.columns-2
@@ -47,7 +47,7 @@
     [:li [:a {:href "https://basecamp.com/shapeup"} "Shape Up"] " & " [:a {:href "https://basecamp.com/books/calm"} "It doesn’t have to be crazy at work"] " by Basecamp."]
     [:li [:a {:href "https://medium.com/red-planet-labs/why-fully-distributed-is-by-far-the-best-way-to-run-a-software-team-d99abfc0c700"} "Why fully distributed is by far the best way to run a software team"] " by Red Planet Labs."]
     [:li [:a {:href "https://www.youtube.com/playlist?list=PLND1JCRq8Vuh3f0P5qjrSdb5eC1ZfZwWJ"} "Awakening from the meaning crisis"] " by John Vervaeke."]
-    [:li [:a {:href "https://www.youtube.com/watch?v=_mG-hhWL_ug"} "Drive: The Surprising Truth About What Motivates Us"] " by Daniel Pink."]]])
+    [:li [:a {:href "https://www.youtube.com/watch?v=_mG-hhWL_ug"} "Drive: The surprising truth about what motivates us"] " by Daniel Pink."]]])
 
 (defn make-component [{:keys [id title description]
                        :img/keys [src]}]
