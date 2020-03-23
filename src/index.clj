@@ -81,7 +81,7 @@
       :img/src "images/network.svg"
       :title "Network"
       :description
-      [[:p "Today companies often hire too much, too sloppily, and too nearby. The Fluent Network is a global & strongly linked graph of the best people, connected through truly meaningful recommendations. This is how we can help to build your own Virtual Team in a fraction of the time and cost. "]
+      [[:p "Today companies often hire too much, too sloppily, and too nearby. The Fluent Network is a global & strongly linked graph of the best people, connected through truly meaningful and honest recommendations. This is how we can help to build your own Virtual Team in a fraction of the time and cost. "]
        [:p "When you invite someone you trust you put your reputation on the line, but you also gain platform benefits including referral fees and a stronger status in the community as a Connector."]]})
     (make-component
      {:id :marketplace
