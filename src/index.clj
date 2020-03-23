@@ -81,21 +81,21 @@
       :img/src "images/network.svg"
       :title "Network"
       :description
-      [[:p "Today companies often hire too much, too sloppily, and too nearby. The Fluent Network is a global & strongly linked graph of the best people, connected through truly meaningful and honest recommendations. This is how we can help to build your own Virtual Team in a fraction of the time and cost. "]
-       [:p "When you invite someone you trust you put your reputation on the line, but you also gain platform benefits including referral fees and a stronger status in the community as a Connector."]]})
+      [[:p "Today companies often hire too much, too sloppily, and too nearby. The Fluent Network is a global & strongly linked graph of the best people, connected through truly meaningful and honest recommendations. This is how we can help to build your own " [:strong "virtual team"] " in both a fraction of the time and at a lower total cost."]
+       [:p "When you invite someone you trust to the network, you put your reputation behind that recommendation. But in exchange for that gift you gain significant network and platform benefits, including referral fees and a stronger status in the community as a Connector."]]})
     (make-component
      {:id :marketplace
       :img/src "images/marketplace.svg"
       :title "Marketplace"
       :description
-      [[:p "As a Market Network, we strive to provide the staging grounds for the full journey from raw idea to finished product – including all the steps in between, including micro-funding if necessary. Think of a Kickstarter for projects."]]})
+      [[:p "As a " [:a {:href "https://www.nfx.com/post/10-years-about-market-networks"} "market network"] ", we strive to provide the staging grounds for the full journey from " [:strong "raw idea"] " to finished product – including all the steps in between, even providing micro funding if necessary. Think of a it as a \"Kickstarter for projects\"."]]})
     (make-component
      {:id :process
       :img/src "images/process.svg"
       :title "Process"
       :description
       [[:p "The Fluent Process is our roadmap from start to finish that makes sure a project outcome has the best chance of success. It starts with the first Raw Idea Workshops with the Client, moves on to Shaping, and then Building where it all comes together."]
-       [:p "And with our platform support for " [:strong "Contracts & Escrow"] " (guaranteed payment for delivered and accepted work), the boring and time-consuming overhead busywork that plagues most teams (and particularly individual freelancers) is optimised away."]]})]])
+       [:p "And with our platform support for " [:strong "Contracts & Escrow"] " &mdash; guaranteed payment for delivered and accepted work &mdash; the boring and time-consuming overhead busywork that plagues most teams (and particularly individual freelancers) is optimised away."]]})]])
 
 (def roles
   [:div#roles
@@ -106,7 +106,7 @@
       :img/src "images/builder.svg"
       :title "Builder"
       :description
-      [[:p "People are not “resources”, and the word “consultant” is too broad and faceless. We call the people who actually build things the " [:strong "Builders"] ". This is not merely a rewording, but a philosophical statement that puts emphasis on creation (and co-creation) – the stuff of action in the world."]
+      [[:p "People are not “resources”, and the word “consultant” is too broad and faceless. We call the people who actually build things the " [:strong "Builders"] ". This is not a mere rewording, but a philosophical statement that puts emphasis on creation (and co-creation) – the stuff of action in the world."]
        [:p "In our dictionary, Builders can be any and all of the following professions: coder, designer, architect, product manager, growth hacker, copywriters, and more – anyone where the primary mode of work is creation."]
        [:p "If there is one group of VIPs that the Fluent Platform really aims to super-serve, it is the Builders. We can be superstars at discovering and defining what we should build, but without the people putting the chisel to the stone, or the fingers to the keyboard, nothing concrete will impact the world."]]})
     (make-component
