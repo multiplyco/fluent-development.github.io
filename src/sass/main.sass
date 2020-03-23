@@ -1,4 +1,5 @@
 @import reset
+@import font-face
 
 // Colors
 // ################################################
@@ -17,16 +18,26 @@ $font-strong: 900
 $font-regular: normal
 $font-light: 300
 
+@include font-face(sf-mono-regular, fonts/SFMono-Regular, null, null, woff2 woff)
+@include font-face(sf-ui-display-regular, fonts/SF-UI-Display-Regular, null, null, woff2 woff)
+@include font-face(sf-ui-display-bold, fonts/SF-UI-Display-Bold, null, null, woff2 woff)
+@include font-face(sf-ui-display-light, fonts/SF-UI-Display-Light, null, null, woff2 woff)
+
 @mixin body-text
-  font-family: "SF Pro Text", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+  font-family: "sf-ui-display-regular", "Helvetica Neue", "Helvetica", "Arial", sans-serif
   line-height: 1.5
 
 @mixin mono-text
-  font-family: "SF Mono", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+  font-family: "sf-mono-regular", monospace
   line-height: 1.5
 
 @mixin title-text
-  font-family: "SF Pro Text", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+  font-family: "sf-ui-display-bold", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+  line-height: 1.0
+  font-weight: $font-strong
+
+@mixin title-text-light
+  font-family: "sf-ui-display-light", "Helvetica Neue", "Helvetica", "Arial", sans-serif
   line-height: 1.0
   font-weight: $font-strong
 
@@ -51,7 +62,7 @@ h1
     font-size: 72px
 
 h2
-  @include title-text
+  @include title-text-light
   font-size: 72px
 
   @media only screen and (max-width: $mobile-breakpoint)

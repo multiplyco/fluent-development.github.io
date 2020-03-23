@@ -58,6 +58,22 @@ input[type="search"]::-webkit-search-results-button,
 input[type="search"]::-webkit-search-results-decoration {
   display: none; }
 
+@font-face {
+  font-family: "sf-mono-regular";
+  src: url("fonts/SFMono-Regular.woff2") format("woff2"), url("fonts/SFMono-Regular.woff") format("woff"); }
+
+@font-face {
+  font-family: "sf-ui-display-regular";
+  src: url("fonts/SF-UI-Display-Regular.woff2") format("woff2"), url("fonts/SF-UI-Display-Regular.woff") format("woff"); }
+
+@font-face {
+  font-family: "sf-ui-display-bold";
+  src: url("fonts/SF-UI-Display-Bold.woff2") format("woff2"), url("fonts/SF-UI-Display-Bold.woff") format("woff"); }
+
+@font-face {
+  font-family: "sf-ui-display-light";
+  src: url("fonts/SF-UI-Display-Light.woff2") format("woff2"), url("fonts/SF-UI-Display-Light.woff") format("woff"); }
+
 body {
   font-family: "Times New Roman";
   box-sizing: border-box;
@@ -68,7 +84,7 @@ sup {
   font-size: 14px; }
 
 h1 {
-  font-family: "SF Pro Text", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: "sf-ui-display-bold", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   line-height: 1.0;
   font-weight: 900;
   font-size: 144px;
@@ -78,7 +94,7 @@ h1 {
       font-size: 72px; } }
 
 h2 {
-  font-family: "SF Pro Text", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: "sf-ui-display-light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   line-height: 1.0;
   font-weight: 900;
   font-size: 72px; }
@@ -87,7 +103,7 @@ h2 {
       font-size: 36px; } }
 
 h3 {
-  font-family: "SF Pro Text", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: "sf-ui-display-bold", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   line-height: 1.0;
   font-weight: 900;
   font-size: 36px; }
@@ -103,7 +119,7 @@ hr {
   margin-bottom: 92px; }
 
 .inline-title {
-  font-family: "SF Pro Text", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: "sf-ui-display-bold", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   line-height: 1.0;
   font-weight: 900;
   background-color: #fecaf4;
@@ -117,7 +133,7 @@ hr {
   font-weight: 900; }
 
 button {
-  font-family: "SF Mono", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: "sf-mono-regular", monospace;
   line-height: 1.5;
   background-color: #E200B0;
   border-radius: 100px;
@@ -135,7 +151,7 @@ a {
   text-decoration: underline; }
 
 p, li {
-  font-family: "SF Pro Text", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: "sf-ui-display-regular", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   line-height: 1.5;
   font-size: 18px; }
 
@@ -169,7 +185,7 @@ em {
       padding: 48px; } }
 
 footer {
-  font-family: "SF Mono", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: "sf-mono-regular", monospace;
   line-height: 1.5;
   text-align: center;
   padding: 24px;
@@ -180,7 +196,7 @@ footer {
     margin: 0; }
 
 #menu {
-  font-family: "SF Mono", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: "sf-mono-regular", monospace;
   line-height: 1.5;
   font-size: 18px;
   display: grid;
@@ -206,7 +222,7 @@ footer {
     border-bottom-color: #E200B0;
     padding-bottom: 12px; }
     #menu ul li {
-      font-family: "SF Mono", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+      font-family: "sf-mono-regular", monospace;
       line-height: 1.5; }
       #menu ul li::before {
         content: "";
@@ -349,7 +365,7 @@ footer {
   #join-inner #join-grunka {
     text-align: center;
     grid-area: join;
-    font-family: "SF Pro Text", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-family: "sf-ui-display-regular", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     line-height: 1.5;
     color: #E200B0;
     font-size: 18px;
