@@ -100,7 +100,8 @@ h2 {
   font-family: "sf-ui-display-light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-weight: normal;
   line-height: 1.0;
-  font-size: 72px; }
+  font-size: 72px;
+  line-height: 1.2; }
   @media only screen and (max-width: 868px) {
     h2 {
       font-size: 36px; } }
@@ -259,7 +260,7 @@ footer {
 #hero {
   margin-bottom: 96px; }
   #hero h1 {
-    margin-bottom: 48px; }
+    margin-bottom: 24px; }
   #hero h2 {
     font-weight: 300; }
 

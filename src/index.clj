@@ -1,41 +1,38 @@
-
 ;; Site blocks
 ;; ##################################
+(def fluent-platform
+  [:div#fluent-platform.block.columns-2
+   [:p.paragraph
+    [:span.inline-title "Fluent platform."]
+    "Fluent is building a platform to facilitate the next generation workplace. It is a distributed, flexible, virtual working environment, tailor made for " [:strong "co-creation"] [:sup "1"] ", which connects the best people with the most meaningful projects irregardless of physical location, and takes care of the incidental complexity and overhead of running great projects with great outcomes."]
+
+   [:p.footnote
+    "[1] Co-creation is when people get together with the primary purpose to make something larger than themselves, to join in a collaboration of creation and stand on the shoulders of giants. Cf with global themes like the " [:a {:href "https://makezine.com"} "Maker movement"] ", and the " [:a {:href "https://burningman.org"} "Burning Man conference"] " in Nevada."]])
+
 (def manifesto
   [:div#manifesto.block.columns-2
    [:p.paragraph
-    [:span.inline-title "Manifesto."]
-    "We believe that work is part of life &mdash; life should not be lived in breaks between work."]
+    [:span.inline-title "Fluent manifesto."]
+    "We believe that work is part of life &mdash; life should not be lived in breaks between work. These are some of our core beliefs:"]
 
-   [:p.paragraph
-    "Today’s technology makes it possible to do knowledge work, and soon almost all kinds of work, from " [:a {:href "https://www.starlink.com/"} "practically anywhere"] ". But many companies still think locally and narrowly about their \"human resources\"" [:sup "1"] ", forcing people to work long hours in environments where focus and flow and unstress is not a priority."]
-
-   [:p.footnote
-    "[1] Our choice of words to replace the generic and loathed “human resource” and “consultant”, for all the important roles in a project, can be found " [:a {:href "#roles"} "below"] ". The most critical role in our mind is the " [:strong "Builder"] " &mdash; a person whose primary responsibility is to create and build new things."]
-
-   [:p.paragraph
-    "We believe that humans are not resources, and that with the aid of great processes and tools a person can do their best work from wherever they feel they can do their best work."]
-
-   [:p.paragraph
-    "Fluent aims to build the platform to facilitate this future workplace. It is a distributed, flexible, virtual workplace, tailor made for co-creation" [:sup "2"] ", which helps connect the best people with the most meaningful projects irregardless of physical location, and takes care of the incidental complexity and overhead of running great projects with great outcomes."]
-
-   [:p.footnote
-    "[2] Co-creation is when people get together with the primary purpose to make something larger than themselves, to join in a collaboration of creation and stand on the shoulders of giants. Cf with global themes like the " [:a {:href "https://makezine.com"} "Maker movement"] ", and the " [:a {:href "https://burningman.org"} "Burning Man conference"] " in Nevada."]])
-
-(def vision-process
-  [:div#culture-process.block.columns-2
-   [:p.paragraph
-    [:span.inline-title "Culture & Process."]
-    "These are a few key parts of the Fluent Culture and our Process."]
    [:ul.paragraph
-    [:li [:strong "Autonomy, Mastery, and Purpose (" [:a {:href "#amp"} "AMP"] "" [:sup 3] ")"] " over hierarchies, forced promotions, and working without caring."]
+    [:li [:strong "Autonomy, Mastery, and Purpose (" [:a {:href "#amp"} "AMP"] "" [:sup 2] ")"] " over hierarchies, forced promotions, and working without caring."]
     [:li [:strong "Fixed appetite and variable scope"] " over fixed scope and false delivery dates."]
     [:li [:strong "Clear, honest, sustainable commitments"] " over " [:em "\"move fast and break [both people and] things\""] "."]
     [:li [:strong "Minimizing and automating away overhead to focus on the essential complexities of a project"] " over multitasking between workstuff and busystuff ad insaneum."]
     [:li [:strong "Meaningful projects"] " over maximizing profits."]
     [:li [:strong "Long term thinking"] " over short term panic."]]
    [:p.footnote
-    "[3] See the wonderful " [:a {:href "https://www.youtube.com/watch?v=A3oIiH7BLmg"} "illustrated companion"] " to Daniel Pink’s talk about " [:strong "Autonomy Mastery Purpose"] ", made by " [:a {:href "https://www.thersa.org"} "the RSA"] "."]])
+    "[2] See the wonderful " [:a {:href "https://www.youtube.com/watch?v=A3oIiH7BLmg"} "illustrated companion"] " to Daniel Pink’s talk about " [:strong "Autonomy Mastery Purpose"] ", made by " [:a {:href "https://www.thersa.org"} "the RSA"] "."]
+
+   [:p.paragraph
+    "Today’s technology makes it possible to do knowledge work, and soon almost all kinds of work, from " [:a {:href "https://www.starlink.com/"} "practically anywhere"] ". But many companies still think locally and narrowly about their \"human resources\"" [:sup "3"] ", forcing people to work long hours in environments where focus and flow and unstress is not a priority."]
+
+   [:p.footnote
+    "[3] Our choice of words to replace the generic and loathed “human resource” and “consultant”, for all the important roles in a project, can be found " [:a {:href "#roles"} "below"] ". The most critical role in our mind is the " [:strong "Builder"] " &mdash; a person whose primary responsibility is to create and build new things."]
+
+   [:p.paragraph
+    "We believe that humans are not resources, and that with the aid of great processes and tools a person can do their best work from " [:em "wherever they feel they can do their best work"] "."]])
 
 (def inspiration
   [:div#inspiration.block.columns-2
@@ -66,7 +63,7 @@
      :title "Autonomy. Mastery. Purpose."
      :description
      [[:p "It is the core of what the Fluent Way is all about. Originated by Daniel Pink in his book " [:em "Drive"] ", " [:strong [:a {:href "https://www.youtube.com/watch?v=A3oIiH7BLmg"} "AMP"]] " defines our core set of values at Fluent. It crystalises three critical things that motivate us humans to do our best work: the desire for freedom, the striving for constant learning and improvement, and a sense of meaning in whatever we do."]
-      [:p "When all three values are met, at least in some way, this can result in the rarified state of " [:a {:href "https://en.wikipedia.org/wiki/Flow_(psychology)"} "flow"] " – that optimum state of creativity, problem solving, and an overall sense of well-being and meaning in the world."]]})])
+      [:p "When all three values are met, at least in some way, this can result in the rarified state of " [:a {:href "https://en.wikipedia.org/wiki/Flow_(psychology)"} "flow"] " &mdash; that optimum state of creativity, problem solving, and an overall sense of well-being and meaning in the world."]]})])
 
 (defn component-title [title]
   [:div.component-title
@@ -88,7 +85,7 @@
       :img/src "images/marketplace.svg"
       :title "Marketplace"
       :description
-      [[:p "As a " [:a {:href "https://www.nfx.com/post/10-years-about-market-networks"} "market network"] ", we strive to provide the staging grounds for the full journey from " [:strong "raw idea"] " to finished product – including all the steps in between, even providing micro funding if necessary. Think of a it as a \"Kickstarter for projects\"."]]})
+      [[:p "As a " [:a {:href "https://www.nfx.com/post/10-years-about-market-networks"} "market network"] ", we strive to provide the staging grounds for the full journey from " [:strong "raw idea"] " to finished product &mdash; including all the steps in between, even providing micro funding if necessary. Think of a it as a \"Kickstarter for projects\"."]]})
     (make-component
      {:id :process
       :img/src "images/process.svg"
@@ -106,8 +103,8 @@
       :img/src "images/builder.svg"
       :title "Builder"
       :description
-      [[:p "People are not “resources”, and the word “consultant” is too broad and faceless. We call the people who actually build things the " [:strong "Builders"] ". This is not a mere rewording, but a philosophical statement that puts emphasis on creation (and co-creation) – the stuff of action in the world."]
-       [:p "In our dictionary, Builders can be any and all of the following professions: coder, designer, architect, product manager, growth hacker, copywriters, and more – anyone where the primary mode of work is creation."]
+      [[:p "People are not “resources”, and the word “consultant” is too broad and faceless. We call the people who actually build things the " [:strong "Builders"] ". This is not a mere rewording, but a philosophical statement that puts emphasis on creation (and co-creation) &mdash; the stuff of action in the world."]
+       [:p "In our dictionary, Builders can be any and all of the following professions: coder, designer, architect, product manager, growth hacker, copywriters, and more &mdash; anyone where the primary mode of work is creation."]
        [:p "If there is one group of VIPs that the Fluent Platform really aims to super-serve, it is the Builders. We can be superstars at discovering and defining what we should build, but without the people putting the chisel to the stone, or the fingers to the keyboard, nothing concrete will impact the world."]]})
     (make-component
      {:id :amplifier
@@ -115,7 +112,7 @@
       :title "Amplifier"
       :description
       [[:p "If there is one role that we consider both key and unique to Fluent, it is the " [:strong "Amplifier&trade;"] ". Think of it as a Key Account Manager 2.0, or an entrepreneur-PM-sales unicorn type of personality, who together with the Shaper are the key components in getting a project off the ground."]
-       [:p "On the Fluent Platform, the Amplifier is the person who acts as a bridge between the Builders and the Clients – protecting the former from “bad money” and unnecessary interference (to let them focus on their work), and equally important protecting the latter against bad results. With our " [:strong "Fluent Mediation&trade; process"] ", we can help deal with disputes in the best way possible."]]})
+       [:p "On the Fluent Platform, the Amplifier is the person who acts as a bridge between the Builders and the Clients &mdash; protecting the former from “bad money” and unnecessary interference (to let them focus on their work), and equally important protecting the latter against bad results. With our " [:strong "Fluent Mediation&trade; process"] ", we can help deal with disputes in the best way possible."]]})
     (make-component
      {:id :shaper
       :img/src "images/shaper.svg"
@@ -129,7 +126,7 @@
       :title "Connector"
       :description
       [[:p "Think of the Connector as a combination of talent scout, recruiter, mentor, and knower of technical stuff. This role is the key to help evaluating a project’s need for people, and then setting out to discover them."]
-       [:p "Availability is one of the trickiest parts of the job – you don’t just need the best people, with the right skills, and highly motivated to join a project; you also need them at the right time. The Fluent Platform helps with this by introducing " [:strong "Availability Schedules"] " for each member of the Network. A project can set a desired date range for when it could start the Build phase, and our search algorithm will help match that plan against people who actually have the time to do the work."]]})
+       [:p "Availability is one of the trickiest parts of the job &mdash; you don’t just need the best people, with the right skills, and highly motivated to join a project; you also need them at the right time. The Fluent Platform helps with this by introducing " [:strong "Availability Schedules"] " for each member of the Network. A project can set a desired date range for when it could start the Build phase, and our search algorithm will help match that plan against people who actually have the time to do the work."]]})
     (make-component
      {:id :client
       :img/src "images/client.svg"
@@ -184,15 +181,15 @@
     [:a {:href "#"} [:img {:src "images/fluent-logo.svg"}]]
     [:ul
      [:li.menu-item [:a {:href "#manifesto"} "Manifesto"]]
-     [:li.menu-item [:a {:href "#culture-process"} "Culture & Process"]]
+     [:li.menu-item [:a {:href "#amp"} "AMP"]]
      [:li.menu-item [:a {:href "#platform"} "Platform"]]]
     [:a.button {:href "https://airtable.com/shrIqZyY1ayFGxeXl"} "Join now"]]
    [:div#hero
     [:h1 "Fluent"]
-    [:h2 "Welcome to autonomy, mastery, and purpose."]
+    [:h2 "The global market network for professional co-creation."]
     [:div.image]]
+   fluent-platform
    manifesto
-   vision-process
    inspiration
    [:hr]
    amp
