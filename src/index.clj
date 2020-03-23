@@ -8,10 +8,10 @@
     "We believe that work is part of life &mdash; life should not be lived in breaks between work."]
 
    [:p.paragraph
-    "Today’s technology makes it possible to do knowledge work, and soon almost all kinds of work, from " [:a {:href "https://www.starlink.com/"} "practically anywhere"] ". But many companies still think locally and narrowly about their \"human resources\"" [:sup "1"] ", forcing many to work long hours in environments where focus and flow and unstress is not a priority."]
+    "Today’s technology makes it possible to do knowledge work, and soon almost all kinds of work, from " [:a {:href "https://www.starlink.com/"} "practically anywhere"] ". But many companies still think locally and narrowly about their \"human resources\"" [:sup "1"] ", forcing people to work long hours in environments where focus and flow and unstress is not a priority."]
 
    [:p.footnote
-    "[1] Our replacement words for “human resource” or “consultant”, for all the important roles that a project needs, can be found " [:a {:href "#roles"} "below"] ". The most critical role in our mind is the " [:strong "Builder"] " &mdash; the person whose primary responsibility is to create and build new things."]
+    "[1] Our choice of words to replace the generic and loathed “human resource” and “consultant”, for all the important roles in a project, can be found " [:a {:href "#roles"} "below"] ". The most critical role in our mind is the " [:strong "Builder"] " &mdash; a person whose primary responsibility is to create and build new things."]
 
    [:p.paragraph
     "We believe that humans are not resources, and that with the aid of great processes and tools a person can do their best work from wherever they feel they can do their best work."]
@@ -35,7 +35,7 @@
     [:li [:strong "Meaningful projects"] " over maximizing profits."]
     [:li [:strong "Long term thinking"] " over short term panic."]]
    [:p.footnote
-    "[3] See the wonderfully illustrated companion to " [:a {:href "https://www.youtube.com/watch?v=y1SDV8nxypE"} "Daniel Pink’s talk"] " about Autonomy Mastery Purpose, by the " [:a {:href "https://www.thersa.org"} "RSA"] "."]])
+    "[3] See the wonderful " [:a {:href "https://www.youtube.com/watch?v=A3oIiH7BLmg"} "illustrated companion"] " to Daniel Pink’s talk about " [:strong "Autonomy Mastery Purpose"] ", made by the " [:a {:href "https://www.thersa.org"} "RSA"] "."]])
 
 (def inspiration
   [:div#inspiration.block.columns-2
@@ -47,7 +47,7 @@
     [:li [:a {:href "https://basecamp.com/shapeup"} "Shape Up"] " & " [:a {:href "https://basecamp.com/books/calm"} "It doesn’t have to be crazy at work"] " by Basecamp."]
     [:li [:a {:href "https://medium.com/red-planet-labs/why-fully-distributed-is-by-far-the-best-way-to-run-a-software-team-d99abfc0c700"} "Why fully distributed is by far the best way to run a software team"] " by Red Planet Labs."]
     [:li [:a {:href "https://www.youtube.com/playlist?list=PLND1JCRq8Vuh3f0P5qjrSdb5eC1ZfZwWJ"} "Awakening from the meaning crisis"] " by John Vervaeke."]
-    [:li [:a {:href "https://www.youtube.com/watch?v=_mG-hhWL_ug"} "Drive: The surprising truth about what motivates us"] " by Daniel Pink."]]])
+    [:li [:a {:href "https://www.brainpickings.org/2013/05/09/daniel-pink-drive-rsa-motivation/"} "Drive: The surprising truth about what motivates us"] " by Daniel Pink."]]])
 
 (defn make-component [{:keys [id title description]
                        :img/keys [src]}]
@@ -65,7 +65,7 @@
      :img/src "images/amp.svg"
      :title "Autonomy. Mastery. Purpose."
      :description
-     [[:p "It is the core of what the Fluent Way is all about. Originated by Daniel Pink in his book " [:strong "Drive"] ", AMP defines our set of core values at Fluent. It crystalises three critical things that motivate us humans to do our best work: the desire for freedom, the striving for constant learning and improvement, and a sense of meaning in whatever we do."]
+     [[:p "It is the core of what the Fluent Way is all about. Originated by Daniel Pink in his book " [:em "Drive"] ", " [:strong [:a {:href "https://www.youtube.com/watch?v=A3oIiH7BLmg"} "AMP"]] " defines our core set of values at Fluent. It crystalises three critical things that motivate us humans to do our best work: the desire for freedom, the striving for constant learning and improvement, and a sense of meaning in whatever we do."]
       [:p "When all three values are met, at least in some way, this can result in the rarified state of " [:a {:href "https://en.wikipedia.org/wiki/Flow_(psychology)"} "flow"] " – that optimum state of creativity, problem solving, and an overall sense of well-being and meaning in the world."]]})])
 
 (defn component-title [title]
