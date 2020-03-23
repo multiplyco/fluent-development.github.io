@@ -94,7 +94,7 @@ hr
   margin-right: 4px
   font-weight: $font-strong
 
-button
+.button
   @include mono-text
   background-color: $foreground-color-primary
   border-radius: 100px
@@ -106,6 +106,7 @@ button
   padding-right: 24px
   font-size: $menu-font-size
   white-space: nowrap
+  text-decoration: none
 
 a
   color: $foreground-color-primary
@@ -204,7 +205,7 @@ footer
         &:hover
           color: $foreground-color-primary
 
-  button
+  .button
     grid-area: button
 
   @media only screen and (max-width: $mobile-breakpoint + 200px)

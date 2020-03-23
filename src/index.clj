@@ -160,7 +160,7 @@
      [:li.menu-item [:a {:href "#manifesto"} "Manifesto"]]
      [:li.menu-item [:a {:href "#vision-process"} "Vision & Process"]]
      [:li.menu-item [:a {:href "#culture"} "Culture"]]]
-    [:button "Join now"]]
+    [:a.button {:href "#join"} "Join now"]]
    [:div#hero
     [:h1 "Fluent."]
     [:h2 "Welcome to purpose."]

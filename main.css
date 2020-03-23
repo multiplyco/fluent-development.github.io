@@ -132,7 +132,7 @@ hr {
   margin-right: 4px;
   font-weight: 900; }
 
-button {
+.button {
   font-family: "sf-mono-regular", monospace;
   line-height: 1.5;
   background-color: #E200B0;
@@ -144,7 +144,8 @@ button {
   padding-left: 24px;
   padding-right: 24px;
   font-size: 18px;
-  white-space: nowrap; }
+  white-space: nowrap;
+  text-decoration: none; }
 
 a {
   color: #E200B0;
@@ -237,7 +238,7 @@ footer {
         transition: 75ms ease-in color; }
         #menu ul li a:hover {
           color: #E200B0; }
-  #menu button {
+  #menu .button {
     grid-area: button; }
   @media only screen and (max-width: 1068px) {
     #menu {
