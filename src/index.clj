@@ -11,7 +11,7 @@
     "Today’s technology makes it possible to do knowledge work, and soon almost all kinds of work, from " [:a {:href "https://www.starlink.com/"} "practically anywhere"] ". But many companies still think locally and narrowly about their \"human resources\"" [:sup "1"] ", forcing many to work long hours in environments where focus and flow and unstress is not a priority."]
 
    [:p.footnote
-    "[1] Our replacement words for “human resource” or “consultant”, for all the important roles that a project needs, can be found " [:a {:href "#roles"} "farther down this webpage"] ". But the most important in our minds is the " [:strong "Builder"] " &mdash; a person whose primary responsibility in a project is to build and create new things."]
+    "[1] Our replacement words for “human resource” or “consultant”, for all the important roles that a project needs, can be found " [:a {:href "#roles"} "below"] ". But the most important in our minds is the " [:strong "Builder"] " &mdash; a person whose primary responsibility in a project is to build and create new things."]
 
    [:p.paragraph
     "We believe that humans are not resources, and that with the aid of great processes and tools a person can do their best work from wherever they feel they can do their best work."]
@@ -98,15 +98,15 @@
        [:p "And with our platform support for " [:strong "Contracts & Escrow"] " (guaranteed payment for delivered and accepted work), the boring and time-consuming overhead busywork that plagues most teams (and particularly individual freelancers) is optimised away."]]})]])
 
 (def roles
-  [:div
+  [:div#roles
    (component-title "Roles")
-   [:div#roles.block.component-grid
+   [:div#roles-components.block.component-grid
     (make-component
      {:id :builder
       :img/src "builder.svg"
       :title "Builder"
       :description
-      [[:p "People are not “resources”, and the word “consultant” is too broad and faceless. We call the people who actually build stuff the " [:strong "Builders"] ". This is not merely a rewording, but a philosophical statement that puts emphasis on creation (and co-creation) – the stuff of action in the world."]
+      [[:p "People are not “resources”, and the word “consultant” is too broad and faceless. We call the people who actually build things the " [:strong "Builders"] ". This is not merely a rewording, but a philosophical statement that puts emphasis on creation (and co-creation) – the stuff of action in the world."]
        [:p "In our dictionary, Builders can be any and all of the following professions: coder, designer, architect, product manager, growth hacker, copywriters, and more – anyone where the primary mode of work is creation."]
        [:p "If there is one group of VIPs that the Fluent Platform really aims to super-serve, it is the Builders. We can be superstars at discovering and defining what we should build, but without the people putting the chisel to the stone, or the fingers to the keyboard, nothing concrete will impact the world."]]})
     (make-component

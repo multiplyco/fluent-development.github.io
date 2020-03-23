@@ -319,19 +319,19 @@ footer {
       #platform-components #network, #platform-components #marketplace, #platform-components #process {
         grid-area: auto; } }
 
-#roles {
+#roles-components {
   grid-template-columns: 1fr 1fr 1fr 1fr; }
-  #roles .component {
+  #roles-components .component {
     grid-column: span 2; }
-  #roles #client {
+  #roles-components #client {
     grid-column: 2/4; }
   @media only screen and (max-width: 868px) {
-    #roles {
+    #roles-components {
       grid-template-areas: none;
       grid-auto-flow: row;
       grid-template-columns: auto;
       grid-auto-rows: auto; }
-      #roles .component, #roles #client {
+      #roles-components .component, #roles-components #client {
         grid-column: auto; } }
 
 .component-inner {
