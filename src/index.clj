@@ -35,7 +35,7 @@
     [:li [:strong "Meaningful projects"] " over maximizing profits."]
     [:li [:strong "Long term thinking"] " over short term panic."]]
    [:p.footnote
-    "[3] See the wonderful " [:a {:href "https://www.youtube.com/watch?v=A3oIiH7BLmg"} "illustrated companion"] " to Daniel Pink’s talk about " [:strong "Autonomy Mastery Purpose"] ", made by the " [:a {:href "https://www.thersa.org"} "RSA"] "."]])
+    "[3] See the wonderful " [:a {:href "https://www.youtube.com/watch?v=A3oIiH7BLmg"} "illustrated companion"] " to Daniel Pink’s talk about " [:strong "Autonomy Mastery Purpose"] ", made by " [:a {:href "https://www.thersa.org"} "the RSA"] "."]])
 
 (def inspiration
   [:div#inspiration.block.columns-2
