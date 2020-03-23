@@ -21,8 +21,10 @@ $font-light: 300
 @include font-face(sf-mono-regular, fonts/SFMono-Regular, null, null, woff2 woff)
 @include font-face(sf-ui-display-regular, fonts/SF-UI-Display-Regular, null, null, woff2 woff)
 @include font-face(sf-ui-display-bold, fonts/SF-UI-Display-Bold, null, null, woff2 woff)
+@include font-face(sf-ui-display-black, fonts/SF-UI-Display-Black, null, null, woff2 woff)
 @include font-face(sf-ui-display-light, fonts/SF-UI-Display-Light, null, null, woff2 woff)
 
+$font-family-black: "sf-ui-display-black", "Helvetica Neue", "Helvetica", "Arial", sans-serif
 $font-family-bold: "sf-ui-display-bold", "Helvetica Neue", "Helvetica", "Arial", sans-serif
 
 @mixin body-text
@@ -34,14 +36,14 @@ $font-family-bold: "sf-ui-display-bold", "Helvetica Neue", "Helvetica", "Arial",
   line-height: 1.5
 
 @mixin title-text
-  font-family: $font-family-bold
+  font-family: $font-family-black
   line-height: 1.0
-  font-weight: $font-strong
+  font-weight: $font-regular
 
 @mixin title-text-light
   font-family: "sf-ui-display-light", "Helvetica Neue", "Helvetica", "Arial", sans-serif
   line-height: 1.0
-  font-weight: $font-strong
+  font-weight: $font-regular
 
 
 // Defaults
@@ -58,7 +60,6 @@ sup
 h1
   @include title-text
   font-size: 144px
-  font-weight: $font-strong
 
   @media only screen and (max-width: $mobile-breakpoint)
     font-size: 72px
@@ -94,7 +95,7 @@ hr
   margin-top: -1px
   margin-bottom: -1px
   margin-right: 4px
-  font-weight: $font-strong
+  font-weight: $font-regular
 
 .button
   @include mono-text
@@ -129,7 +130,7 @@ li
 
 strong
   font-family: $font-family-bold
-  font-weight: $font-strong
+  font-weight: $font-regular
 
 em
   font-style: italic

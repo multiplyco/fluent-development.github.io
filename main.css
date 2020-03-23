@@ -71,6 +71,10 @@ input[type="search"]::-webkit-search-results-decoration {
   src: url("fonts/SF-UI-Display-Bold.woff2") format("woff2"), url("fonts/SF-UI-Display-Bold.woff") format("woff"); }
 
 @font-face {
+  font-family: "sf-ui-display-black";
+  src: url("fonts/SF-UI-Display-Black.woff2") format("woff2"), url("fonts/SF-UI-Display-Black.woff") format("woff"); }
+
+@font-face {
   font-family: "sf-ui-display-light";
   src: url("fonts/SF-UI-Display-Light.woff2") format("woff2"), url("fonts/SF-UI-Display-Light.woff") format("woff"); }
 
@@ -84,11 +88,10 @@ sup {
   font-size: 14px; }
 
 h1 {
-  font-family: "sf-ui-display-bold", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: "sf-ui-display-black", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   line-height: 1.0;
-  font-weight: 900;
-  font-size: 144px;
-  font-weight: 900; }
+  font-weight: normal;
+  font-size: 144px; }
   @media only screen and (max-width: 868px) {
     h1 {
       font-size: 72px; } }
@@ -96,16 +99,16 @@ h1 {
 h2 {
   font-family: "sf-ui-display-light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   line-height: 1.0;
-  font-weight: 900;
+  font-weight: normal;
   font-size: 72px; }
   @media only screen and (max-width: 868px) {
     h2 {
       font-size: 36px; } }
 
 h3 {
-  font-family: "sf-ui-display-bold", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: "sf-ui-display-black", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   line-height: 1.0;
-  font-weight: 900;
+  font-weight: normal;
   font-size: 36px; }
   @media only screen and (max-width: 868px) {
     h3 {
@@ -119,9 +122,9 @@ hr {
   margin-bottom: 92px; }
 
 .inline-title {
-  font-family: "sf-ui-display-bold", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: "sf-ui-display-black", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   line-height: 1.0;
-  font-weight: 900;
+  font-weight: normal;
   background-color: #fecaf4;
   padding-left: 4px;
   padding-right: 4px;
@@ -130,7 +133,7 @@ hr {
   margin-top: -1px;
   margin-bottom: -1px;
   margin-right: 4px;
-  font-weight: 900; }
+  font-weight: normal; }
 
 .button {
   font-family: "sf-mono-regular", monospace;
@@ -166,7 +169,7 @@ li::before {
 
 strong {
   font-family: "sf-ui-display-bold", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-  font-weight: 900; }
+  font-weight: normal; }
 
 em {
   font-style: italic; }
