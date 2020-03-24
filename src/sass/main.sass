@@ -105,6 +105,7 @@ hr
 
 .button
   @include mono-text
+  display: inline-block
   background-color: $foreground-color-primary
   border-radius: 100px
   border: none
@@ -116,6 +117,7 @@ hr
   font-size: $menu-font-size
   white-space: nowrap
   text-decoration: none
+  text-align: center
 
 a
   color: $foreground-color-primary
@@ -153,6 +155,11 @@ em
   background-color: #fff
   border-radius: 0 0 48px 48px
   box-sizing: border-box
+
+  display: grid
+  grid-template-columns: auto
+  grid-auto-rows: auto
+  grid-auto-flow: row
 
   @media only screen and (max-width: $mobile-breakpoint)
     padding: 48px
@@ -250,7 +257,7 @@ footer
   margin-top: 48px
   margin-bottom: 48px
 
-.columns-2
+.columns-2-2fr-1fr
   grid-gap: 12px
   grid-column-gap: 96px
   display: grid
@@ -270,7 +277,32 @@ footer
   grid-column: 2
   font-size: 12px
 
+.columns-2-1fr-1fr
+  grid-gap: 12px
+  grid-column-gap: 96px
+  display: grid
+  grid-template-columns: 1fr 1fr
+  grid-auto-rows: auto
 
+  @media only screen and (max-width: $mobile-breakpoint)
+    grid-template-columns: 1fr
+
+    .paragraph, .footnote
+      grid-column: auto
+
+
+#cta-bottom
+  justify-self: center
+  max-width: 650px
+
+  .columns-2-1fr-1fr
+    justify-content: flex-start
+
+  .cta-area
+    display: grid
+    grid-template-columns: auto
+    grid-template-rows: auto 1fr auto
+    grid-gap: 24px
 
 // Components
 // ################################################
