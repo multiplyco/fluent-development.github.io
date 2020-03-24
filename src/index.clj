@@ -4,7 +4,7 @@
   [:div#fluent-platform.block.columns-2-2fr-1fr
    [:p.paragraph
     [:span.inline-title "Fluent platform."]
-    "Fluent is building a platform to facilitate the next generation workplace. It is a distributed, flexible, virtual working environment, tailor made for " [:strong "co-creation"] [:sup "1"] ", which connects the best people with the most meaningful projects irregardless of physical location, and takes care of the incidental complexity and overhead of running great projects with great outcomes."]
+    "Fluent is a platform that facilitates the next generation workplace. It is a distributed, flexible, virtual working environment, tailor made for " [:strong "co-creation"] [:sup "1"] ", which connects the best people with the most meaningful projects irregardless of physical location, and takes care of the incidental complexity and overhead of running great projects with great outcomes."]
 
    [:p.footnote
     "[1] Co-creation is when people get together with the primary purpose to make something larger than themselves, to join in a collaboration of creation and stand on the shoulders of giants. Cf with global themes like the " [:a {:href "https://makezine.com"} "Maker movement"] ", and the " [:a {:href "https://burningman.org"} "Burning Man conference"] " in Nevada."]
