@@ -1,16 +1,24 @@
 ;; Site blocks
 ;; ##################################
 (def fluent-platform
-  [:div#fluent-platform.block.columns-2
+  [:div#fluent-platform.block.columns-2-2fr-1fr
    [:p.paragraph
     [:span.inline-title "Fluent platform."]
     "Fluent is building a platform to facilitate the next generation workplace. It is a distributed, flexible, virtual working environment, tailor made for " [:strong "co-creation"] [:sup "1"] ", which connects the best people with the most meaningful projects irregardless of physical location, and takes care of the incidental complexity and overhead of running great projects with great outcomes."]
 
    [:p.footnote
-    "[1] Co-creation is when people get together with the primary purpose to make something larger than themselves, to join in a collaboration of creation and stand on the shoulders of giants. Cf with global themes like the " [:a {:href "https://makezine.com"} "Maker movement"] ", and the " [:a {:href "https://burningman.org"} "Burning Man conference"] " in Nevada."]])
+    "[1] Co-creation is when people get together with the primary purpose to make something larger than themselves, to join in a collaboration of creation and stand on the shoulders of giants. Cf with global themes like the " [:a {:href "https://makezine.com"} "Maker movement"] ", and the " [:a {:href "https://burningman.org"} "Burning Man conference"] " in Nevada."]
+
+   [:p.paragraph [:strong "If you're a developer, designer, or PM"] " who wants to work on Fluent projects, "
+    [:a {:href "#cta-bottom"} "click here to join our network"]
+    "."]
+
+   [:p.paragraph [:strong "If you're a company"] " with a web or app project you want to get built, "
+    [:a {:href "#cta-bottom"} "get in touch "]
+    "to learn how Fluent can help."]])
 
 (def manifesto
-  [:div#manifesto.block.columns-2
+  [:div#manifesto.block.columns-2-2fr-1fr
    [:p.paragraph
     [:span.inline-title "Fluent manifesto."]
     "We believe that work is part of life &mdash; life should not be lived in breaks between work. These are some of our core beliefs:"]
@@ -35,7 +43,7 @@
     "We believe that humans are not resources, and that with the aid of great processes and tools a person can do their best work from " [:em "wherever they feel they can do their best work"] "."]])
 
 (def inspiration
-  [:div#inspiration.block.columns-2
+  [:div#inspiration.block.columns-2-2fr-1fr
    [:p.paragraph
     [:span.inline-title "Inspiration."]
     "Here are some things that inspire us:"]
@@ -137,11 +145,20 @@
       [[:p "Think of the Connector as a combination of talent scout, recruiter, mentor, and knower of technical stuff. This role is the key to help evaluating a project’s need for people, and then setting out to discover them."]
        [:p "Availability is one of the trickiest parts of the job: you don’t just need the best people, with the right skills, and highly motivated to join a project; you also need them at the right time. The Fluent Platform helps with this by introducing " [:strong "Availability Schedules"] " for each member of the network &mdash; a project can set a desired date range for when it could start the Build phase, and our search algorithm will help match that plan against the best people who " [:em "also actually have the time"] " to do the work."]]})]])
 
-(def join
-  [:div#join.block
+
+(def cta-bottom
+  [:div#cta-bottom
    (component-title "Join now")
-   [:div#join-inner
-    [:input#join-grunka {:placeholder "Sign up to get started today 🙏🏻"}]]])
+   [:div.block.columns-2-1fr-1fr
+    [:div.cta-area
+     [:h3 "I am a Builder"]
+     [:p "I want to work on Fluent projects."]
+     [:a.button {:href "https://airtable.com/shrIqZyY1ayFGxeXl"} "Join now"]]
+    [:div.cta-area
+     [:h3 "I have a project"]
+     [:p "I want the best people and process for my project."]
+     [:a.button {:href "https://airtable.com/shrIqZyY1ayFGxeXl"} "Contact me"]]]])
+
 
 ;; Site structure
 ;; ##################################
@@ -190,7 +207,7 @@
      [:li.menu-item [:a {:href "#manifesto"} "Manifesto"]]
      [:li.menu-item [:a {:href "#amp"} "AMP"]]
      [:li.menu-item [:a {:href "#platform"} "Platform"]]]
-    [:a.button {:href "https://airtable.com/shrIqZyY1ayFGxeXl"} "Join now"]]
+    [:a.button {:href "#cta-bottom"} "Join now"]]
    [:div#hero
     [:h1 "Fluent"]
     [:h2 "The global market network for professional co-creation."]
@@ -203,9 +220,9 @@
    [:hr]
    platform
    [:hr]
-   roles]
-   ;;[:hr]]
-   ;;join]
+   roles
+   [:hr]
+   cta-bottom]
   [:footer.block
    "@ 2019-2020 Fluent Development AB, c/o " [:a {:href "https://www.norrskenhouse.org"} "Norrsken House"] " in Stockholm. "
    [:a {:href ""} "Terms of use & cookie policy."]]]]
