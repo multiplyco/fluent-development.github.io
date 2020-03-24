@@ -158,13 +158,13 @@
   [:meta {:name    "viewport"
           :content "width=device-width, initial-scale=1.0"}]
   [:meta {:name "description"
-          :content "Fluent is a global market network for professional co-creation, with a platform that helps builders and clients come together to make the best projects possible while minimising boring overhead busywork. Welcome to AMP – autonomy, mastery, and purpose."}]
+          :content description}]
   [:meta {:name "og:title"
           :content "The global market network for professional co-creation – Fluent"}]
   [:meta {:name "og:url"
           :content "https://fluent.to"}]
   [:meta {:name "og:description"
-          :content "Fluent is a global market network for professional co-creation, with a platform that helps builders and clients come together to make the best projects possible while minimising boring overhead busywork. Welcome to AMP – autonomy, mastery, and purpose."}]
+          :content description}]
   [:meta {:name "og:image"
           :content "https://fluent.to/images/fluent-logo-512px.png"}]
   [:meta {:name "twitter:card"
@@ -172,11 +172,12 @@
   [:meta {:name "twitter:image"
           :content "https://fluent.to/images/fluent-logo-512px.png"}]
   [:meta {:name "twitter:site"
-          :content "@FluentNetwork"}]
+           :content "@FluentNetwork"}]
   [:meta {:name "twitter:title"
           :content "The global market network for professional co-creation – Fluent"}]
   [:meta {:name "twitter:description"
-          :content "Fluent is a global market network for professional co-creation, with a platform that helps builders and clients come together to make the best projects possible while minimising boring overhead busywork. Welcome to AMP – autonomy, mastery, and purpose."}]
+          :content description}]
+  (stylesheet "main.css")
   [:link {:rel "canonical" :href "https://fluent.to/"}]
   [:link {:rel "shortcut icon" :href "/favicon.ico"}]
   [:link {:rel "icon" :type "image/png" :sizes "96x96" :href "/favicon-96x96.ico"}]
