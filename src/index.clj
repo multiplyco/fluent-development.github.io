@@ -13,9 +13,9 @@
     [:a {:href "#cta-bottom"} "click here to join our network"]
     "."]
 
-   [:p.paragraph [:strong "If you're a company"] " with a web or app project you want to get built, "
+   [:p.paragraph [:strong "If you're a company"] " with a digital project you want to get built, "
     [:a {:href "#cta-bottom"} "get in touch "]
-    "to learn how Fluent can help."]])
+    "to learn how Fluent can help organise your ideas into a plan for action."]])
 
 (def manifesto
   [:div#manifesto.block.columns-2-2fr-1fr
@@ -145,7 +145,6 @@
       [[:p "Think of the Connector as a combination of talent scout, recruiter, mentor, and knower of technical stuff. This role is the key to help evaluating a project’s need for people, and then setting out to discover them."]
        [:p "Availability is one of the trickiest parts of the job: you don’t just need the best people, with the right skills, and highly motivated to join a project; you also need them at the right time. The Fluent Platform helps with this by introducing " [:strong "Availability Schedules"] " for each member of the network &mdash; a project can set a desired date range for when it could start the Build phase, and our search algorithm will help match that plan against the best people who " [:em "also actually have the time"] " to do the work."]]})]])
 
-
 (def cta-bottom
   [:div#cta-bottom
    (component-title "Join now")
@@ -157,8 +156,7 @@
     [:div.cta-area
      [:h3 "I have a project"]
      [:p "I want the best people and process for my project."]
-     [:a.button {:href "https://airtable.com/shrIqZyY1ayFGxeXl"} "Contact me"]]]])
-
+     [:a.button {:href "mailto:hello@fluent.to?subject=I%20have%20a%20project"} "Contact me"]]]])
 
 ;; Site structure
 ;; ##################################
@@ -189,7 +187,7 @@
   [:meta {:name "twitter:image"
           :content "https://fluent.to/images/fluent-logo-512px.png"}]
   [:meta {:name "twitter:site"
-           :content "@FluentNetwork"}]
+          :content "@FluentNetwork"}]
   [:meta {:name "twitter:title"
           :content "The global market network for professional co-creation – Fluent"}]
   [:meta {:name "twitter:description"
