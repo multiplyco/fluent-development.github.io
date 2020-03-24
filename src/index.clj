@@ -155,7 +155,7 @@
      [:a.button {:href "https://airtable.com/shrIqZyY1ayFGxeXl"} "Join now"]]
     [:div.cta-area
      [:h3 "I have a project"]
-     [:p "I want to get the top people and the best process aligned with my needs, to make my project succesful."]
+     [:p "I want to get the top people and the best process aligned with my needs, to make my project successful."]
      [:a.button {:href "mailto:hello@fluent.to?subject=I%20have%20a%20project"} "Contact me"]]]])
 
 ;; Site structure
