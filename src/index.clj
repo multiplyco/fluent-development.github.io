@@ -151,11 +151,11 @@
    [:div.block.columns-2-1fr-1fr
     [:div.cta-area
      [:h3 "I am a Builder"]
-     [:p "I want to work on Fluent projects."]
+     [:p "I want to work together with the best people in the world on truly meaningful projects, and do it in a sustainable and trustworthy way."]
      [:a.button {:href "https://airtable.com/shrIqZyY1ayFGxeXl"} "Join now"]]
     [:div.cta-area
      [:h3 "I have a project"]
-     [:p "I want the best people and process for my project."]
+     [:p "I want to get the top people and the best process aligned with my needs, to make my project succesful."]
      [:a.button {:href "mailto:hello@fluent.to?subject=I%20have%20a%20project"} "Contact me"]]]])
 
 ;; Site structure
@@ -206,21 +206,22 @@
      [:li.menu-item [:a {:href "#amp"} "AMP"]]
      [:li.menu-item [:a {:href "#platform"} "Platform"]]]
     [:a.button {:href "#cta-bottom"} "Join now"]]
-   [:div#hero
-    [:h1 "Fluent"]
-    [:h2 "The global market network for professional co-creation."]
-    [:div.image]]
-   fluent-platform
-   manifesto
-   inspiration
-   [:hr]
-   amp
-   [:hr]
-   platform
-   [:hr]
-   roles
-   [:hr]
-   cta-bottom]
+   [:div#main-content
+    [:div#hero
+     [:h1 "Fluent"]
+     [:h2 "The global market network for professional co-creation."]
+     [:div.image]]
+    fluent-platform
+    manifesto
+    inspiration
+    [:hr]
+    amp
+    [:hr]
+    platform
+    [:hr]
+    roles
+    [:hr]
+    cta-bottom]]
   [:footer.block
    "@ 2019-2020 Fluent Development AB, c/o " [:a {:href "https://www.norrskenhouse.org"} "Norrsken House"] " in Stockholm. "
    [:a {:href ""} "Terms of use & cookie policy."]]]]
