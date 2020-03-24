@@ -267,9 +267,10 @@ footer {
 #hero {
   margin-bottom: 96px; }
   #hero h1 {
-    margin-bottom: 24px; }
+    margin-bottom: 24px;
+    color: #E200B0; }
   #hero h2 {
-    font-weight: 300; }
+    font-weight: 100; }
 
 .block {
   margin-top: 48px;
