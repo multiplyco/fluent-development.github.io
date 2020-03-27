@@ -15,7 +15,10 @@
 
    [:p.paragraph [:strong "If you're a company"] " with a digital project you want to get built, "
     [:a {:href "#cta-bottom"} "get in touch "]
-    "to learn how Fluent can help organise your ideas into a plan for action."]])
+    "to learn how Fluent can help organise your ideas into a plan for action."]
+
+   [:p.paragraph [:strong "If you just want to talk"] " to one of us, we have public Office Hours. The topic can be anything related to what Fluent is about, so be creative :) "
+    [:a {:href "https://fluent.youcanbookme.com"} "Book a 30 minute video chat now"] "."]])
 
 (def manifesto
   [:div#manifesto.block.columns-2-2fr-1fr
