@@ -34,7 +34,7 @@
     [:li [:strong "Meaningful projects"] " over maximizing profits."]
     [:li [:strong "Long term thinking"] " over short term panic."]]
    [:p.footnote
-    "[2] See the wonderful " [:a {:href "https://www.youtube.com/watch?v=A3oIiH7BLmg"} "illustrated companion"] " to Daniel Pink’s talk about " [:strong "Autonomy Mastery Purpose"] ", made by " [:a {:href "https://www.thersa.org"} "the RSA"] "."]
+    "[2] See the wonderful " [:a {:href "https://www.youtube.com/watch?v=u6XAPnuFjJc"} "illustrated companion"] " to Daniel Pink’s talk about " [:strong "Autonomy Mastery Purpose"] ", made by " [:a {:href "https://www.thersa.org"} "the RSA"] "."]
 
    [:p.paragraph
     "Today’s technology makes it possible to do knowledge work, and soon almost all kinds of work, from " [:a {:href "https://www.starlink.com/"} "practically anywhere"] ". But many companies still think locally and narrowly about their \"human resources\"" [:sup "3"] ", forcing people to work long hours in environments where focus and flow and unstress is not a priority."]
@@ -55,7 +55,8 @@
     [:li [:a {:href "https://basecamp.com/shapeup"} "Shape Up"] " & " [:a {:href "https://basecamp.com/books/calm"} "It doesn’t have to be crazy at work"] " by Basecamp."]
     [:li [:a {:href "https://medium.com/red-planet-labs/why-fully-distributed-is-by-far-the-best-way-to-run-a-software-team-d99abfc0c700"} "Why fully distributed is by far the best way to run a software team"] " by Red Planet Labs."]
     [:li [:a {:href "https://www.youtube.com/playlist?list=PLND1JCRq8Vuh3f0P5qjrSdb5eC1ZfZwWJ"} "Awakening from the meaning crisis"] " by John Vervaeke."]
-    [:li [:a {:href "https://www.brainpickings.org/2013/05/09/daniel-pink-drive-rsa-motivation/"} "Drive: The surprising truth about what motivates us"] " by Daniel Pink."]]])
+    [:li [:a {:href "https://www.brainpickings.org/2013/05/09/daniel-pink-drive-rsa-motivation/"} "Drive: The surprising truth about what motivates us"] " by Daniel Pink."]
+    [:li [:a {:href "https://29k.org/"} "29k: Personal growth programs"] " in app form, by our friends at " [:a {:href "https://www.norrskenfoundation.org"} "Norrsken"] " and " [:a {:href "https://ekskaret.se"} "Eksk&auml;ret"] " in Stockholm."]]])
 
 (defn make-component [{:keys [id title description]
                        :img/keys [src]}]
@@ -73,7 +74,7 @@
      :img/src "images/amp.svg"
      :title "Autonomy. Mastery. Purpose."
      :description
-     [[:p "It is the core of what the Fluent Way is all about. Originated by Daniel Pink in his book " [:em "Drive"] ", " [:strong [:a {:href "https://www.youtube.com/watch?v=A3oIiH7BLmg"} "AMP"]] " defines our core set of values at Fluent. It crystalises three critical things that motivate us humans to do our best work: the desire for freedom, the striving for constant learning and improvement, and a sense of meaning in whatever we do."]
+     [[:p "It is the core of what the Fluent Way is all about. Originated by Daniel Pink in his book " [:em "Drive"] ", " [:strong [:a {:href "https://www.youtube.com/watch?v=u6XAPnuFjJc"} "AMP"]] " defines our core set of values at Fluent. It crystalises three critical things that motivate us humans to do our best work: the desire for freedom, the striving for constant learning and improvement, and a sense of meaning in whatever we do."]
       [:p "When all three values are met, at least in some way, this can result in the rarified state of " [:a {:href "https://en.wikipedia.org/wiki/Flow_(psychology)"} "flow"] " &mdash; that optimum state of creativity, problem solving, and an overall sense of well-being and meaning in the world."]]})])
 
 (defn component-title [title]
