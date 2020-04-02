@@ -104,7 +104,7 @@
       :title "Process"
       :description
       [[:p "The Fluent Process is our roadmap from start to finish that makes sure a project outcome has the best chance of success. It starts with the first Raw Idea Workshops with the Client, moves on to Shaping, and then Building where it all comes together."]
-       [:p "And with our platform support for " [:strong "Contracts & Escrow"] " &mdash; guaranteed payment for delivered and accepted work &mdash; the boring and time-consuming overhead busywork that plagues most teams (and particularly individual freelancers) is optimised away."]]})]])
+       [:p "And with our platform support for " [:strong "Contracts & Escrow"] " &mdash; guaranteed payment for delivered and accepted work &mdash; the financial risk and the boring & time-consuming overhead busywork that plagues most teams (and particularly individual freelancers) is optimised away."]]})]])
 
 (def roles
   [:div#roles
