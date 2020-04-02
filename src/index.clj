@@ -147,7 +147,7 @@
       :title "Connector"
       :description
       [[:p "Think of the Connector as a combination of talent scout, recruiter, mentor, and knower of technical stuff. This role is the key to help evaluating a project’s need for people, and then setting out to discover them."]
-       [:p "Availability is one of the trickiest parts of the job: you don’t just need the best people, with the right skills, and highly motivated to join a project; you also need them at the right time. The Fluent Platform helps with this by introducing " [:strong "Availability Schedules"] " for each member of the network &mdash; a project can set a desired date range for when it could start the Build phase, and our search algorithm will help match that plan against the best people who " [:em "actually have time to do the work"] "."]]})]])
+       [:p "Availability is one of the trickiest parts of the job: you don’t just need the best people, with the right skills, and highly motivated to join a project; you also need them at the right time. The Fluent Platform helps with this by introducing " [:strong "Availability Schedules"] " for each member in the network &mdash; a project can set a desired date range for when it could start the Build phase, and our search algorithm will help match that plan against the best people who " [:em "actually have the time to do the work"] "."]]})]])
 
 (def cta-bottom
   [:div#cta-bottom
