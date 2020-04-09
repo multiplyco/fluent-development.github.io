@@ -123,8 +123,8 @@
       :img/src "images/amplifier.svg"
       :title "Amplifier"
       :description
-      [[:p "If there is one role that we consider both key and unique to Fluent, it is the " [:strong "Amplifier&trade;"] ". Think of it as a Key Account Manager 2.0, or an entrepreneur-PM-sales unicorn type of personality, who together with the Shaper are the key components in getting a project off the ground."]
-       [:p "On the Fluent Platform, the Amplifier is the person who acts as a bridge between the Builders and the Clients &mdash; protecting the former from “bad money” and unnecessary interference (to let them focus on their work), and equally important protecting the latter against bad results. With our " [:strong "Fluent Mediation&trade; process"] ", we can help deal with disputes in the best way possible."]]})
+      [[:p "If there is one role that we consider both key and unique to Fluent, it is the " [:strong "Amplifier"] ". Think of it as a Key Account Manager 2.0, or an entrepreneur-PM-sales unicorn type of personality, who together with the Shaper are the key components in getting a project off the ground."]
+       [:p "On the Fluent Platform, the Amplifier is the person who acts as a bridge between the Builders and the Clients &mdash; protecting the former from “bad money” and unnecessary interference (to let them focus on their work), and equally important protecting the latter against bad results. With our " [:strong "Fluent mediation process"] ", we can help deal with disputes in the best way possible."]]})
     (make-component
      {:id :shaper
       :img/src "images/shaper.svg"
