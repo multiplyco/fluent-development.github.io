@@ -56,7 +56,8 @@
     [:li [:a {:href "https://medium.com/red-planet-labs/why-fully-distributed-is-by-far-the-best-way-to-run-a-software-team-d99abfc0c700"} "Why fully distributed is by far the best way to run a software team"] " by Red Planet Labs."]
     [:li [:a {:href "https://www.youtube.com/playlist?list=PLND1JCRq8Vuh3f0P5qjrSdb5eC1ZfZwWJ"} "Awakening from the meaning crisis"] " by John Vervaeke."]
     [:li [:a {:href "https://www.brainpickings.org/2013/05/09/daniel-pink-drive-rsa-motivation/"} "Drive: The surprising truth about what motivates us"] " by Daniel Pink."]
-    [:li [:a {:href "https://29k.org/"} "29k: Personal growth programs"] " in app form, by our friends at " [:a {:href "https://www.norrskenfoundation.org"} "Norrsken"] " and " [:a {:href "https://ekskaret.se"} "Eksk&auml;ret"] " in Stockholm."]]])
+    [:li [:a {:href "https://29k.org/"} "29k: Personal growth programs"] " in app form, by our friends at " [:a {:href "https://www.norrskenfoundation.org"} "Norrsken"] " and " [:a {:href "https://ekskaret.se"} "Eksk&auml;ret"] " in Stockholm."]
+    [:li [:a {:href "https://www.reinventingorganizations.com/"} "Reinventing Organizations"] " by Frederic Laloux."]]])
 
 (defn make-component [{:keys [id title description]
                        :img/keys [src]}]
