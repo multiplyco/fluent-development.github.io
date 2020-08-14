@@ -20,6 +20,7 @@
    [:p.paragraph [:strong "If you just want to talk"] " to one of us, we have public Office Hours. The topic can be anything related to what Fluent is about, so be creative :) "
     [:a {:href "https://fluent.youcanbookme.com"} "Book a 30 minute video chat now"] "."]])
 
+
 (def manifesto
   [:div#manifesto.block.columns-2-2fr-1fr
    [:p.paragraph
@@ -45,6 +46,7 @@
    [:p.paragraph
     "We believe that humans are not resources, and that with the aid of great processes and tools a person can do their best work from " [:em "wherever they feel they can do their best work"] "."]])
 
+
 (def inspiration
   [:div#inspiration.block.columns-2-2fr-1fr
    [:p.paragraph
@@ -59,6 +61,7 @@
     [:li [:a {:href "https://29k.org/"} "29k: Personal growth programs"] " in app form, by our friends at " [:a {:href "https://www.norrskenfoundation.org"} "Norrsken"] " and " [:a {:href "https://ekskaret.se"} "Eksk&auml;ret"] " in Stockholm."]
     [:li [:a {:href "https://www.reinventingorganizations.com/"} "Reinventing Organizations"] " by Frederic Laloux."]]])
 
+
 (defn make-component [{:keys [id title description]
                        :img/keys [src]}]
   [:div.component {:id (name id)}
@@ -67,6 +70,7 @@
      [:img {:src src}]
      [:h3 title]]
     description)])
+
 
 (def amp
   [:div#amp.block.component-grid
@@ -78,9 +82,11 @@
      [[:p "It is the core of what the Fluent Way is all about. Originated by Daniel Pink in his book " [:em "Drive"] ", " [:strong [:a {:href "https://www.youtube.com/watch?v=u6XAPnuFjJc"} "AMP"]] " defines our core set of values at Fluent. It crystalises three critical things that motivate us humans to do our best work: the desire for freedom, the striving for constant learning and improvement, and a sense of meaning in whatever we do."]
       [:p "When all three values are met, at least in some way, this can result in the rarified state of " [:a {:href "https://en.wikipedia.org/wiki/Flow_(psychology)"} "flow"] " &mdash; that optimum state of creativity, problem solving, and an overall sense of well-being and meaning in the world."]]})])
 
+
 (defn component-title [title]
   [:div.component-title
    [:h2.inline-title title]])
+
 
 (def platform
   [:div#platform
@@ -102,10 +108,11 @@
     (make-component
      {:id :process
       :img/src "images/process.svg"
-      :title "Process"
+      :title "Workspace"
       :description
       [[:p "The Fluent Process is our roadmap from start to finish that makes sure a project outcome has the best chance of success. It starts with the first Raw Idea Workshops with the Client, moves on to Shaping, and then Building where it all comes together."]
        [:p "And with our platform support for " [:strong "Contracts & Escrow"] " &mdash; guaranteed payment for delivered and accepted work &mdash; the financial risk and the boring & time-consuming overhead busywork that plagues most teams (and particularly individual freelancers) is optimised away."]]})]])
+
 
 (def roles
   [:div#roles
@@ -150,6 +157,7 @@
       [[:p "Think of the Connector as a combination of talent scout, recruiter, mentor, and knower of technical stuff. This role is the key to help evaluating a project’s need for people, and then setting out to discover them."]
        [:p "Availability is one of the trickiest parts of the job: you don’t just need the best people, with the right skills, and highly motivated to join a project; you also need them at the right time. The Fluent Platform helps with this by introducing " [:strong "availability schedules"] " for each member in the network &mdash; a project can set a desired date range for when it could start the Build phase, and our search algorithm will help match that plan against the best people who " [:em "actually have the time to do the work"] "."]]})]])
 
+
 (def cta-bottom
   [:div#cta-bottom
    (component-title "Join now")
@@ -163,17 +171,21 @@
      [:p "I want to get the top people and the best process aligned with my needs, to make my project successful."]
      [:a.button {:href "mailto:hello@fluent.to?subject=I%20have%20a%20project"} "Contact me"]]]])
 
+
 ;; Site structure
 ;; ##################################
 (defn stylesheet [href]
   [:link {:rel "stylesheet" :type "text/css" :href href}])
 
+
 (def description
   "Fluent is a global market network for professional co-creation, with a platform that helps builders and clients come together to make the best projects possible while minimising boring overhead busywork. Welcome to AMP – autonomy, mastery, and purpose.")
 
+(def tag-line "Your Networked Workspace")
+
 [:html
  [:head
-  [:title "Fluent: The global market network for professional co-creation"]
+  [:title (str "Fluent: " tag-line)]
   [:meta {:charset "utf-8"}]
   [:meta {:name    "viewport"
           :content "width=device-width, initial-scale=1.0"}]
@@ -208,13 +220,13 @@
     [:a {:href "#"} [:img {:src "images/fluent-logo.svg"}]]
     [:ul
      [:li.menu-item [:a {:href "#manifesto"} "Manifesto"]]
-     [:li.menu-item [:a {:href "#amp"} "AMP"]]
-     [:li.menu-item [:a {:href "#platform"} "Platform"]]]
+     [:li.menu-item [:a {:href "#amp"} "Autonomy, Mastery & Purpose"]]]
+     ;[:li.menu-item [:a {:href "#platform"} "Platform"]]]
     [:a.button {:href "#cta-bottom"} "Join now"]]
    [:div#main-content
     [:div#hero
      [:h1 "Fluent"]
-     [:h2 "The global market network for professional co-creation."]
+     [:h2 tag-line]
      [:div.image]]
     fluent-platform
     manifesto
@@ -222,10 +234,10 @@
     [:hr]
     amp
     [:hr]
-    platform
-    [:hr]
-    roles
-    [:hr]
+    ; platform
+    ; [:hr]
+    ; roles
+    ; [:hr]
     cta-bottom]]
   [:footer.block
    "@ 2019-2020 Fluent Development AB, c/o " [:a {:href "https://www.norrskenhouse.org"} "Norrsken House"] " in Stockholm. "
