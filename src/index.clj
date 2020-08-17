@@ -217,7 +217,7 @@
  [:body
   [:div#content-container
    [:div#menu
-    [:a {:href "#"} [:img {:src "images/fluent-logo.svg"}]]
+    [:a {:href "#"} [:img {:src "images/ft.svg"}]]
     [:ul
      [:li.menu-item [:a {:href "#manifesto"} "Manifesto"]]
      [:li.menu-item [:a {:href "#amp"} "Autonomy, Mastery & Purpose"]]]
