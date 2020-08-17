@@ -2,7 +2,7 @@ setup:
 	yarn && yarn install-deps
 
 prod:
-	yarn build
+	yarn release
 
 dev1:
 	yarn sass:dev
