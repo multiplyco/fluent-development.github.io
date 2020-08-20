@@ -11,4 +11,4 @@ dev2:
 	yarn build:dev
 
 serve:
-	yarn serve && open localhost:8080
+	yarn serve
