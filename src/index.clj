@@ -246,4 +246,5 @@ cookieconsent.run({\"notice_banner_type\":\"headline\",\"consent_type\":\"expres
   [:footer.block
    "@ 2019-2020 Fluent Development AB, c/o " [:a {:href "https://www.norrskenhouse.org"} "Norrsken House"] " in Stockholm. "
    [:a {:href "/terms-cookies-policy"} "Terms of use & cookie policy."]]
-  cookie-consent-script]]
+  cookie-consent-script
+  [:div "mu"]]]
