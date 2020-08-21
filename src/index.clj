@@ -173,6 +173,20 @@
 
 (def tag-line "Your networked workspace.")
 
+(defn javascript [src & body]
+  (let [attrs {:type "text/javascript"}
+        attrs (if src
+                (assoc attrs :src src)
+                attrs)]
+    (into [:script attrs] body)))
+
+(def cookie-consent-script
+  (vector :div
+          (javascript "//www.freeprivacypolicy.com/public/cookie-consent/3.1.0/cookie-consent.js")
+          (javascript nil "document.addEventListener('DOMContentLoaded', function () {
+cookieconsent.run({\"notice_banner_type\":\"headline\",\"consent_type\":\"express\",\"palette\":\"dark\",\"language\":\"en\",\"website_name\":\"Fluent\",\"cookies_policy_url\":\"https://fluent.to/terms-cookies-policy\"});
+});")))
+
 [:html
  [:head
   [:title (str "Fluent: " tag-line)]
@@ -231,4 +245,5 @@
     cta-bottom]]
   [:footer.block
    "@ 2019-2020 Fluent Development AB, c/o " [:a {:href "https://www.norrskenhouse.org"} "Norrsken House"] " in Stockholm. "
-   [:a {:href ""} "Terms of use & cookie policy."]]]]
+   [:a {:href "/terms-cookies-policy"} "Terms of use & cookie policy."]]
+  cookie-consent-script]]

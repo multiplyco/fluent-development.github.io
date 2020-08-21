@@ -1,7 +1,7 @@
 setup:
 	yarn && yarn install-deps
 
-prod:
+release:
 	yarn release
 
 dev1:
