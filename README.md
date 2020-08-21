@@ -19,3 +19,4 @@ Terminal 2: `yarn build:dev`
 Terminal 3: `yarn serve`
 
 Open `localhost:8080`
+
