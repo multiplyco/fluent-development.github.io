@@ -3,8 +3,8 @@
 (def fluent-platform
   [:div#fluent-platform.block.columns-2-2fr-1fr
    [:p.paragraph
-    [:span.inline-title "Fluent platform."]
-    "Fluent is a platform that facilitates the next generation workplace. It is a distributed, flexible, virtual working environment, tailor made for " [:strong "co-creation"] [:sup "1"] ", which connects the best people with the most meaningful projects irregardless of physical location, and takes care of the incidental complexity and overhead of running great projects with great outcomes."]
+    [:span.inline-title "Fluent Network."]
+    "Fluent is a network and agency that facilitates the next generation workplace, focused on co-creation" [:sup "1"] ". It is a distributed, flexible, virtual network of top talent, which connects the best people with the most meaningful projects irregardless of physical location, and takes care of the incidental complexity and overhead of running great projects with great outcomes."]
 
    [:p.footnote
     "[1] Co-creation is when people come together with the primary purpose to make something larger than themselves, to join in a collaboration of creation and stand on the shoulders of giants. Cf with global themes like the " [:a {:href "https://makezine.com"} "Maker movement"] ", and the " [:a {:href "https://burningman.org"} "Burning Man conference"] " in Nevada."]
@@ -118,14 +118,14 @@
       :description
       [[:p "People are not “resources”, and the word “consultant” is too broad and faceless. We call the people who actually build things the " [:strong "Builders"] ". This is not a mere rewording, but a philosophical statement that puts emphasis on creation (and co-creation) &mdash; the stuff of action in the world."]
        [:p "In our dictionary, Builders can be any and all of the following professions: coder, designer, architect, product manager, growth hacker, copywriters, and more &mdash; anyone where the primary mode of work is creation."]
-       [:p "If there is one group of VIPs that the Fluent Platform really aims to super-serve, it is the Builders. We can be superstars at discovering and defining what we should build, but without the people putting the chisel to the stone, or the fingers to the keyboard, nothing concrete will impact the world."]]})
+       [:p "If there is one group of VIPs that the Fluent Network really aims to super-serve, it is the Builders. We can be superstars at discovering and defining what we should build, but without the people putting the chisel to the stone, or the fingers to the keyboard, nothing concrete will impact the world."]]})
     (make-component
      {:id :amplifier
       :img/src "images/amplifier.svg"
       :title "Amplifier"
       :description
       [[:p "If there is one role that we consider both key and unique to Fluent, it is the " [:strong "Amplifier"] ". Think of it as a Key Account Manager 2.0, or an entrepreneur-PM-sales unicorn type of personality, who together with the Shaper are the key components in getting a project off the ground."]
-       [:p "On the Fluent Platform, the Amplifier is the person who acts as a bridge between the Builders and the Clients &mdash; protecting the former from “bad money” and unnecessary interference (to let them focus on their work), and equally important protecting the latter against bad results. With our " [:strong "Fluent mediation process"] ", we can help deal with disputes in the best way possible."]]})
+       [:p "On the Fluent Network, the Amplifier is the person who acts as a bridge between the Builders and the Clients &mdash; protecting the former from “bad money” and unnecessary interference (to let them focus on their work), and equally important protecting the latter against bad results. With our " [:strong "Fluent mediation process"] ", we can help deal with disputes in the best way possible."]]})
     (make-component
      {:id :shaper
       :img/src "images/shaper.svg"
@@ -139,7 +139,7 @@
       :img/src "images/client.svg"
       :title "Client"
       :description
-      [[:p "As a participant in the Fluent Platform, the Client shares our values and agrees that AMP is the best way to generate both great results and happy teams that can produce long-term value in a " [:strong "sustainable"] " way."]
+      [[:p "As a participant in the Fluent Network, the Client shares our values and agrees that AMP is the best way to generate both great results and happy teams that can produce long-term value in a " [:strong "sustainable"] " way."]
        [:p "Clients come to Fluent to access the best Shapers and Builders, and to get more work done with less friction and higher quality. Their experience and deep understanding of their own industries and businesses is a great source of learning for everyone in the network."]
        [:p "Great clients bring a sense of purpose and long-term vision to their projects, leveraging the world-class talent in the Fluent Network to change the world bit by bit. This helps to fulfil both individual aims and the common goals we all share."]]})
     (make-component
@@ -148,7 +148,7 @@
       :title "Connector"
       :description
       [[:p "Think of the Connector as a combination of talent scout, recruiter, mentor, and knower of technical stuff. This role is the key to help evaluating a project’s need for people, and then setting out to discover them."]
-       [:p "Availability is one of the trickiest parts of the job: you don’t just need the best people, with the right skills, and highly motivated to join a project; you also need them at the right time. The Fluent Platform helps with this by introducing " [:strong "availability schedules"] " for each member in the network &mdash; a project can set a desired date range for when it could start the Build phase, and our search algorithm will help match that plan against the best people who " [:em "actually have the time to do the work"] "."]]})]])
+       [:p "Availability is one of the trickiest parts of the job: you don’t just need the best people, with the right skills, and highly motivated to join a project; you also need them at the right time. The Fluent Network helps with this by introducing " [:strong "availability schedules"] " for each member in the network &mdash; a project can set a desired date range for when it could start the Build phase, and our search algorithm will help match that plan against the best people who " [:em "actually have the time to do the work"] "."]]})]])
 
 (def cta-bottom
   [:div#cta-bottom
@@ -171,7 +171,7 @@
 (def description
   "Fluent is a global market network for professional co-creation, with a platform that helps builders and clients come together to make the best projects possible while minimising boring overhead busywork. Welcome to AMP – autonomy, mastery, and purpose.")
 
-(def tag-line "Your networked workspace.")
+(def tag-line "Your remote team.")
 
 (defn javascript [src & body]
   (let [attrs {:type "text/javascript"}
